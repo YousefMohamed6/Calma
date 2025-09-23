@@ -1,9 +1,9 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/screen/auth_screen/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/screen/auth_screen/login_screen.dart';
 
 class OnBoardingScreenController extends BaseController {
   PageController pageController = PageController();

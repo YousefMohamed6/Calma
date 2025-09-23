@@ -1,14 +1,14 @@
+import 'package:calmaa/common/extensions/duration_extension.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/widget/custom_bg_circle_button.dart';
+import 'package:calmaa/screen/color_filter_screen/color_filter_screen.dart';
+import 'package:calmaa/screen/create_feed_screen/create_feed_screen_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/duration_extension.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/widget/custom_bg_circle_button.dart';
-import 'package:shortzz/screen/color_filter_screen/color_filter_screen.dart';
-import 'package:shortzz/screen/create_feed_screen/create_feed_screen_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 import 'package:video_player/video_player.dart';
 
 class FeedVideoView extends StatelessWidget {

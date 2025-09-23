@@ -1,14 +1,14 @@
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/widget/custom_blur_button.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
+import 'package:calmaa/screen/camera_screen/camera_screen_controller.dart';
+import 'package:calmaa/screen/create_feed_screen/create_feed_screen.dart';
+import 'package:calmaa/screen/create_feed_screen/create_feed_screen_controller.dart';
+import 'package:calmaa/screen/reels_screen/reels_screen.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/widget/custom_blur_button.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
-import 'package:shortzz/screen/camera_screen/camera_screen_controller.dart';
-import 'package:shortzz/screen/create_feed_screen/create_feed_screen.dart';
-import 'package:shortzz/screen/create_feed_screen/create_feed_screen_controller.dart';
-import 'package:shortzz/screen/reels_screen/reels_screen.dart';
 
 class ReelPreviewCard extends StatelessWidget {
   final CreateFeedScreenController controller;

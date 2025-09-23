@@ -1,12 +1,12 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/gift_wallet_service.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/model/general/status_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/gift_wallet_service.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/model/general/status_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
 
 class RequestWithdrawalScreenController extends BaseController {
   Rx<Setting?> settings = Rx<Setting?>(null);

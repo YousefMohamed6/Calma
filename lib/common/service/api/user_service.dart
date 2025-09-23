@@ -1,20 +1,20 @@
 import 'dart:io';
 
+import 'package:calmaa/common/controller/firebase_firestore_controller.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/api_service.dart';
+import 'package:calmaa/common/service/utils/params.dart';
+import 'package:calmaa/common/service/utils/web_service.dart';
+import 'package:calmaa/model/general/status_model.dart';
+import 'package:calmaa/model/user_model/block_user_model.dart';
+import 'package:calmaa/model/user_model/follower_model.dart';
+import 'package:calmaa/model/user_model/following_model.dart';
+import 'package:calmaa/model/user_model/links_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/model/user_model/users_model.dart';
+import 'package:calmaa/screen/edit_profile_screen/widget/add_edit_link_sheet.dart';
+import 'package:calmaa/utilities/app_res.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:shortzz/common/controller/firebase_firestore_controller.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/api_service.dart';
-import 'package:shortzz/common/service/utils/params.dart';
-import 'package:shortzz/common/service/utils/web_service.dart';
-import 'package:shortzz/model/general/status_model.dart';
-import 'package:shortzz/model/user_model/block_user_model.dart';
-import 'package:shortzz/model/user_model/follower_model.dart';
-import 'package:shortzz/model/user_model/following_model.dart';
-import 'package:shortzz/model/user_model/links_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/model/user_model/users_model.dart';
-import 'package:shortzz/screen/edit_profile_screen/widget/add_edit_link_sheet.dart';
-import 'package:shortzz/utilities/app_res.dart';
 
 enum LoginMethod {
   email,

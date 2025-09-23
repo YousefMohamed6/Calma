@@ -1,16 +1,16 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/functions/generate_color.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/screen/camera_edit_screen/camera_edit_screen_controller.dart';
+import 'package:calmaa/screen/camera_edit_screen/text_story/widget/story_text_font_widget.dart';
+import 'package:calmaa/screen/camera_edit_screen/text_story/widget/text_editor_sheet.dart';
+import 'package:calmaa/utilities/app_res.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/functions/generate_color.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/screen/camera_edit_screen/camera_edit_screen_controller.dart';
-import 'package:shortzz/screen/camera_edit_screen/text_story/widget/story_text_font_widget.dart';
-import 'package:shortzz/screen/camera_edit_screen/text_story/widget/text_editor_sheet.dart';
-import 'package:shortzz/utilities/app_res.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 enum BgColorType { color, gradient }
 
@@ -27,7 +27,8 @@ class StoryTextViewController extends BaseController {
 
   RxList<TextWidgetData> textWidgets = <TextWidgetData>[].obs;
 
-  Rx<StoryTextEditor> selectorEditorIndex = Rx<StoryTextEditor>(StoryTextEditor.font);
+  Rx<StoryTextEditor> selectorEditorIndex =
+      Rx<StoryTextEditor>(StoryTextEditor.font);
   Rx<GoogleFontFamily?> selectedFontFamily = Rx<GoogleFontFamily?>(null);
   GlobalKey previewContainer = GlobalKey();
   Rx<FontAlign> selectedAlignment = Rx(FontAlign.center);
@@ -77,7 +78,9 @@ class StoryTextViewController extends BaseController {
       // Convert map keys to a list to reduce object creation
       final fontList = googleFontsMap.keys
           .map((fontName) => GoogleFontFamily(fontName: fontName))
-          .toList(growable: false); // Use non-growable list to reduce memory overhead
+          .toList(
+              growable:
+                  false); // Use non-growable list to reduce memory overhead
       Loggers.success(fontList.length);
       fontFamilyList.assignAll(fontList);
       filteredFontFamilyList.assignAll(fontList);
@@ -163,13 +166,15 @@ class StoryTextViewController extends BaseController {
     } else {
       // Filter fontFamilyList based on the query
       filteredFontFamilyList.assignAll(fontFamilyList
-          .where((font) => font.fontName.toLowerCase().contains((value).toLowerCase()))
+          .where((font) =>
+              font.fontName.toLowerCase().contains((value).toLowerCase()))
           .toList());
     }
   }
 
   void openFontSheet() async {
-    Get.bottomSheet(const GoogleFontFamilySheet(), isScrollControlled: true, ignoreSafeArea: false)
+    Get.bottomSheet(const GoogleFontFamilySheet(),
+            isScrollControlled: true, ignoreSafeArea: false)
         .then((value) {
       onSearchFontFamily('');
     });

@@ -1,16 +1,16 @@
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/livestream/app_user.dart';
+import 'package:calmaa/model/livestream/livestream.dart';
+import 'package:calmaa/screen/gift_sheet/send_gift_sheet.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/livestream_screen_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/color_res.dart';
+import 'package:calmaa/utilities/style_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/livestream/app_user.dart';
-import 'package:shortzz/model/livestream/livestream.dart';
-import 'package:shortzz/screen/gift_sheet/send_gift_sheet.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/livestream_screen_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/color_res.dart';
-import 'package:shortzz/utilities/style_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class LiveStreamTextFieldView extends StatelessWidget {
   final bool isAudience;

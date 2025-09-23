@@ -1,8 +1,8 @@
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class TextButtonCustom extends StatelessWidget {
   final String title;
@@ -56,10 +56,10 @@ class TextButtonCustom extends StatelessWidget {
           child: child ??
               Text(
                 title.capitalize ?? '',
-            style: TextStyleCustom.outFitRegular400(
-                color: titleColor ?? textDarkGrey(context),
-                fontSize: fontSize ?? 17),
-          ),
+                style: TextStyleCustom.outFitRegular400(
+                    color: titleColor ?? textDarkGrey(context),
+                    fontSize: fontSize ?? 17),
+              ),
         ),
       ),
     );

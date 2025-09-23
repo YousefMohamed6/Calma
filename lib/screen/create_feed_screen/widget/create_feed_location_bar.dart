@@ -1,10 +1,10 @@
+import 'package:calmaa/model/general/location_place_model.dart';
+import 'package:calmaa/screen/create_feed_screen/create_feed_screen_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/model/general/location_place_model.dart';
-import 'package:shortzz/screen/create_feed_screen/create_feed_screen_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class CreateFeedLocationBar extends StatelessWidget {
   final CreateFeedScreenController controller;
@@ -31,7 +31,8 @@ class CreateFeedLocationBar extends StatelessWidget {
             const SizedBox(width: 5),
             Expanded(
                 child: Text(place.placeTitle,
-                    style: TextStyleCustom.outFitLight300(color: textDarkGrey(context)),
+                    style: TextStyleCustom.outFitLight300(
+                        color: textDarkGrey(context)),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis)),
             const SizedBox(width: 5),

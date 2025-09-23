@@ -1,14 +1,14 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/widget/confirmation_dialog.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/chat/chat_thread.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/utilities/firebase_const.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/widget/confirmation_dialog.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/chat/chat_thread.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/utilities/firebase_const.dart';
 
 class MessageScreenController extends BaseController {
   List<String> chatCategories = [LKey.chats.tr, LKey.requests.tr];
@@ -36,7 +36,8 @@ class MessageScreenController extends BaseController {
         .doc(myUser?.id.toString())
         .collection(FirebaseConst.usersList)
         .withConverter(
-          fromFirestore: (snapshot, options) => ChatThread.fromJson(snapshot.data()!),
+          fromFirestore: (snapshot, options) =>
+              ChatThread.fromJson(snapshot.data()!),
           toFirestore: (ChatThread value, options) => value.toJson(),
         )
         .where(FirebaseConst.isDeleted, isEqualTo: false)
@@ -59,7 +60,8 @@ class MessageScreenController extends BaseController {
             // Remove the user from their current list
             final userId = change.doc.data()?.chatUser?.userId;
             chatsUsers.removeWhere((user) => user.chatUser?.userId == userId);
-            requestsUsers.removeWhere((user) => user.chatUser?.userId == userId);
+            requestsUsers
+                .removeWhere((user) => user.chatUser?.userId == userId);
 
             // Get the updated user data
             final updatedUser = change.doc.data();
@@ -75,7 +77,8 @@ class MessageScreenController extends BaseController {
             // Remove the user from their current list
             final userId = change.doc.data()?.chatUser?.userId;
             chatsUsers.removeWhere((user) => user.chatUser?.userId == userId);
-            requestsUsers.removeWhere((user) => user.chatUser?.userId == userId);
+            requestsUsers
+                .removeWhere((user) => user.chatUser?.userId == userId);
             break;
         }
       }

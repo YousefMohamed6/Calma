@@ -1,11 +1,11 @@
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/common/widget/confirmation_dialog.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/common/widget/confirmation_dialog.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
 
 class LocationService {
   LocationService._();

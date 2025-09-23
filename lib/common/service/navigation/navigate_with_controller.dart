@@ -1,7 +1,7 @@
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/profile_screen/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/profile_screen/profile_screen.dart';
 
 Future<T?> navigateWithController<T, C extends GetxController>({
   required String tag,

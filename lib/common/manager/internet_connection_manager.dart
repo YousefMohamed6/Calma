@@ -1,10 +1,10 @@
 import 'dart:async';
 
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/widget/no_internet_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/widget/no_internet_sheet.dart';
 
 class InternetConnectionManager {
   InternetConnectionManager._();

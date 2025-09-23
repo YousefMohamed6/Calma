@@ -1,14 +1,14 @@
 import 'dart:io';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/manager/ads_manager.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/widget/eula_sheet.dart';
+import 'package:calmaa/common/widget/restart_widget.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/screen/select_language_screen/select_language_screen.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/manager/ads_manager.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/widget/eula_sheet.dart';
-import 'package:shortzz/common/widget/restart_widget.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/screen/select_language_screen/select_language_screen.dart';
 
 class SelectLanguageScreenController extends BaseController {
   Rx<Language?> selectedLanguage = Rx(null);

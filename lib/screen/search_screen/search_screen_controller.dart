@@ -1,24 +1,24 @@
 import 'dart:async';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/functions/debounce_action.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/service/api/common_service.dart';
+import 'package:calmaa/common/service/api/post_service.dart';
+import 'package:calmaa/common/service/api/search_service.dart';
+import 'package:calmaa/common/service/location/location_service.dart';
+import 'package:calmaa/common/service/navigation/navigate_with_controller.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/general/location_place_model.dart';
+import 'package:calmaa/model/post_story/hashtag_model.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/hashtag_screen/hashtag_screen.dart';
+import 'package:calmaa/screen/location_screen/location_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/functions/debounce_action.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/service/api/common_service.dart';
-import 'package:shortzz/common/service/api/post_service.dart';
-import 'package:shortzz/common/service/api/search_service.dart';
-import 'package:shortzz/common/service/location/location_service.dart';
-import 'package:shortzz/common/service/navigation/navigate_with_controller.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/general/location_place_model.dart';
-import 'package:shortzz/model/post_story/hashtag_model.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/hashtag_screen/hashtag_screen.dart';
-import 'package:shortzz/screen/location_screen/location_screen.dart';
 
 class SearchScreenController extends BaseController {
   List<SearchTabs> searchTabs = SearchTabs.values;

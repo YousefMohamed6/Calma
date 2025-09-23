@@ -1,15 +1,15 @@
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/common/widget/full_name_with_blue_tick.dart';
+import 'package:calmaa/model/chat/chat_thread.dart';
+import 'package:calmaa/model/livestream/app_user.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/chat_screen/chat_screen.dart';
+import 'package:calmaa/screen/message_screen/message_screen_controller.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/common/widget/full_name_with_blue_tick.dart';
-import 'package:shortzz/model/chat/chat_thread.dart';
-import 'package:shortzz/model/livestream/app_user.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/chat_screen/chat_screen.dart';
-import 'package:shortzz/screen/message_screen/message_screen_controller.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class ChatConversationUserCard extends StatelessWidget {
   final ChatThread chatConversation;

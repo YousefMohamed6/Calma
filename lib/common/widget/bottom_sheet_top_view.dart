@@ -1,8 +1,8 @@
+import 'package:calmaa/common/widget/custom_divider.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/custom_divider.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class BottomSheetTopView extends StatelessWidget {
   final String title;

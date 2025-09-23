@@ -1,10 +1,10 @@
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/manager/story_view/story_view.dart';
+import 'package:calmaa/model/post_story/music/music_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/utilities/app_res.dart';
 import 'package:flutter/material.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/manager/story_view/story_view.dart';
-import 'package:shortzz/model/post_story/music/music_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/utilities/app_res.dart';
 
 class StoryModel {
   StoryModel({
@@ -156,7 +156,9 @@ class Story {
         '${content?.addBaseURL()}',
         story: this,
         controller: controller,
-        duration: Duration(seconds: int.parse(duration ?? AppRes.storyVideoDuration.toString())),
+        duration: Duration(
+            seconds:
+                int.parse(duration ?? AppRes.storyVideoDuration.toString())),
         shown: isWatchedByMe(),
         id: id ?? 0,
         viewedByUsersIds: viewedByUsersIds(),
@@ -167,8 +169,9 @@ class Story {
         url: '${content?.addBaseURL()}',
         controller: controller,
         imageFit: BoxFit.fitWidth,
-        duration:
-            Duration(seconds: int.parse(duration ?? AppRes.storyImageAndTextDuration.toString())),
+        duration: Duration(
+            seconds: int.parse(
+                duration ?? AppRes.storyImageAndTextDuration.toString())),
         shown: isWatchedByMe(),
         id: id ?? 0,
         viewedByUsersIds: viewedByUsersIds(),
@@ -180,8 +183,9 @@ class Story {
         backgroundColor: Colors.black,
         shown: isWatchedByMe(),
         id: id ?? 0,
-        duration:
-            Duration(seconds: int.parse(duration ?? AppRes.storyImageAndTextDuration.toString())),
+        duration: Duration(
+            seconds: int.parse(
+                duration ?? AppRes.storyImageAndTextDuration.toString())),
         viewedByUsersIds: viewedByUsersIds(),
       );
     }

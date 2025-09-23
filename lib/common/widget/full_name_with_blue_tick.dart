@@ -1,7 +1,7 @@
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class FullNameWithBlueTick extends StatelessWidget {
   final Widget? child;

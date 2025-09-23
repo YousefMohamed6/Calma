@@ -1,7 +1,7 @@
+import 'package:calmaa/common/controller/firebase_firestore_controller.dart';
+import 'package:calmaa/model/livestream/app_user.dart';
+import 'package:calmaa/utilities/app_res.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/firebase_firestore_controller.dart';
-import 'package:shortzz/model/livestream/app_user.dart';
-import 'package:shortzz/utilities/app_res.dart';
 
 class Livestream {
   int? watchingCount;

@@ -1,5 +1,5 @@
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
 
 class MusicModel {
   MusicModel({
@@ -61,8 +61,7 @@ class Music {
     isDeleted = json['is_deleted'];
     createdAt = json['created_at'];
     updatedAt = json['updated_at'];
-    user = json['user'] != null ? User.fromJson(json['user'])
-        : null;
+    user = json['user'] != null ? User.fromJson(json['user']) : null;
   }
 
   int? id;

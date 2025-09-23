@@ -1,14 +1,14 @@
 import 'dart:io';
 
+import 'package:calmaa/common/widget/bottom_sheet_top_view.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/chat_screen/chat_screen_controller.dart';
+import 'package:calmaa/screen/chat_screen/widget/chat_bottom_action_view.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/bottom_sheet_top_view.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/chat_screen/chat_screen_controller.dart';
-import 'package:shortzz/screen/chat_screen/widget/chat_bottom_action_view.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class SendMediaSheet extends StatelessWidget {
   final String image;
@@ -16,7 +16,10 @@ class SendMediaSheet extends StatelessWidget {
   final ChatScreenController controller;
 
   const SendMediaSheet(
-      {super.key, required this.image, required this.onSendBtnClick, required this.controller});
+      {super.key,
+      required this.image,
+      required this.onSendBtnClick,
+      required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +40,8 @@ class SendMediaSheet extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: ClipSmoothRect(
-                  radius: SmoothBorderRadius(cornerRadius: 15, cornerSmoothing: 1),
+                  radius:
+                      SmoothBorderRadius(cornerRadius: 15, cornerSmoothing: 1),
                   child: Image.file(File(image),
                       fit: BoxFit.contain,
                       errorBuilder: (context, error, stackTrace) => Container(
@@ -47,7 +51,9 @@ class SendMediaSheet extends StatelessWidget {
                             ),
                             alignment: Alignment.center,
                             child: Image.asset(AssetRes.icNoImage,
-                                height: 100, width: 100, color: textDarkGrey(context)),
+                                height: 100,
+                                width: 100,
+                                color: textDarkGrey(context)),
                           )),
                 ),
               ),

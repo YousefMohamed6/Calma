@@ -1,12 +1,12 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/manager/firebase_notification_manager.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/general/status_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/manager/firebase_notification_manager.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/general/status_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
 
 class FollowController extends BaseController {
   Rx<User?> user;

@@ -1,5 +1,5 @@
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class CustomBgCircleButton extends StatelessWidget {
   final String image;
@@ -8,12 +8,13 @@ class CustomBgCircleButton extends StatelessWidget {
   final double? iconSize;
   final VoidCallback? onTap;
 
-  const CustomBgCircleButton({super.key,
-    required this.image,
-    this.bgColor,
-    this.size,
-    this.iconSize,
-    this.onTap});
+  const CustomBgCircleButton(
+      {super.key,
+      required this.image,
+      this.bgColor,
+      this.size,
+      this.iconSize,
+      this.onTap});
 
   @override
   Widget build(BuildContext context) {

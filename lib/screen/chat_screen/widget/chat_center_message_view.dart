@@ -1,21 +1,21 @@
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/widget/load_more_widget.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/chat/message_data.dart';
+import 'package:calmaa/screen/chat_screen/chat_screen_controller.dart';
+import 'package:calmaa/screen/chat_screen/message_type_widget/chat_audio_message.dart';
+import 'package:calmaa/screen/chat_screen/message_type_widget/chat_g_i_f_message.dart';
+import 'package:calmaa/screen/chat_screen/message_type_widget/chat_gift_message.dart';
+import 'package:calmaa/screen/chat_screen/message_type_widget/chat_media_message.dart';
+import 'package:calmaa/screen/chat_screen/message_type_widget/chat_post_message.dart';
+import 'package:calmaa/screen/chat_screen/message_type_widget/chat_story_reply_message.dart';
+import 'package:calmaa/screen/chat_screen/message_type_widget/chat_text_message.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/widget/load_more_widget.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/chat/message_data.dart';
-import 'package:shortzz/screen/chat_screen/chat_screen_controller.dart';
-import 'package:shortzz/screen/chat_screen/message_type_widget/chat_audio_message.dart';
-import 'package:shortzz/screen/chat_screen/message_type_widget/chat_g_i_f_message.dart';
-import 'package:shortzz/screen/chat_screen/message_type_widget/chat_gift_message.dart';
-import 'package:shortzz/screen/chat_screen/message_type_widget/chat_media_message.dart';
-import 'package:shortzz/screen/chat_screen/message_type_widget/chat_post_message.dart';
-import 'package:shortzz/screen/chat_screen/message_type_widget/chat_story_reply_message.dart';
-import 'package:shortzz/screen/chat_screen/message_type_widget/chat_text_message.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 import 'package:super_context_menu/super_context_menu.dart';
 
 class ChatMessageView extends StatelessWidget {

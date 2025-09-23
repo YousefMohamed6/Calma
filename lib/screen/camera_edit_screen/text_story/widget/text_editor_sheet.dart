@@ -1,16 +1,15 @@
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/camera_edit_screen/text_story/story_text_view_controller.dart';
+import 'package:calmaa/screen/camera_edit_screen/text_story/widget/story_text_font_color.dart';
+import 'package:calmaa/screen/camera_edit_screen/text_story/widget/story_text_font_opacity.dart';
+import 'package:calmaa/screen/camera_edit_screen/text_story/widget/story_text_font_style.dart';
+import 'package:calmaa/screen/camera_edit_screen/text_story/widget/story_text_font_widget.dart';
+import 'package:calmaa/utilities/app_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/camera_edit_screen/text_story/story_text_view_controller.dart';
-import 'package:shortzz/screen/camera_edit_screen/text_story/widget/story_text_font_color.dart';
-import 'package:shortzz/screen/camera_edit_screen/text_story/widget/story_text_font_opacity.dart';
-import 'package:shortzz/screen/camera_edit_screen/text_story/widget/story_text_font_style.dart';
-import 'package:shortzz/screen/camera_edit_screen/text_story/widget/story_text_font_widget.dart';
-import 'package:shortzz/utilities/app_res.dart';
-
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 import 'package:uuid/uuid.dart';
 
 class TextEditorSheet extends StatelessWidget {
@@ -57,10 +56,11 @@ class ConfirmButton extends StatelessWidget {
   final TextEditingController textController;
   final TextWidgetData data;
 
-  const ConfirmButton({super.key,
-    required this.controller,
-    required this.textController,
-    required this.data});
+  const ConfirmButton(
+      {super.key,
+      required this.controller,
+      required this.textController,
+      required this.data});
 
   @override
   Widget build(BuildContext context) {

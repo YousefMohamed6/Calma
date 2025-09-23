@@ -1,4 +1,4 @@
-import 'package:shortzz/model/user_model/user_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
 
 class FollowingModel {
   FollowingModel({

@@ -1,0 +1,94 @@
+# dart run flutter_native_splash:create --path=splash.yaml
+flutter_native_splash:
+  # Light mode.
+  color: "#ffffff"
+  image: assets/images/splash.png
+  # background_image: "assets/images/splash.png"
+  # branding: assets/dart.png
+  
+  # dark mode.
+  color_dark: "#ffffff"
+  image_dark: assets/images/splash.png
+  # background_image_dark: "assets/dark-background.png"
+  # branding_dark: assets/dart_dark.png
+
+  # Shared
+  # branding_mode: center
+  # branding_bottom_padding: 24
+  
+  # The android_12 parameter allows you to specify a splash screen for Android 12 and above.
+  android_12:
+    # Light mode.
+    image:  assets/images/android12.png
+    color: "#ffffff"
+    # icon_background_color: "#111111"
+    # branding: assets/dart.png
+
+    # Dark mode.
+    image_dark: assets/images/android12.png
+    color_dark: "#ffffff"
+    # icon_background_color_dark: "#eeeeee"
+    # branding_dark: assets/dart_dark.png
+
+  # platform.
+  android: true
+  ios: true
+  web: false
+
+
+  #android
+  # Light mode.
+  # color_android: "#42a5f5"
+  # image_android: assets/images/splash.png
+  # background_image_android: "assets/background-android.png"
+  # branding_android: assets/brand-android.png
+  
+
+  # Dark mode.
+  # color_dark_android: "#042a49"
+  # image_dark_android: assets/images/splash.png
+  # background_image_dark_android: "assets/dark-background-android.png"
+  # branding_dark_android: assets/dart_dark-android.png
+
+  # Shared
+  # branding_bottom_padding_android: 24
+  # android_gravity: center
+  # android_screen_orientation: sensorLandscape
+
+  #ios
+  # Light mode.
+  # color_ios: "#ffffff"
+  # image_ios: assets/images/splash.png
+  # background_image_ios: "assets/background-ios.png"
+  # branding_ios: assets/brand-ios.png
+
+
+  # Dark mode.
+  # color_dark_ios: "#042a49"
+  # image_dark_ios: assets/splash-invert-ios.png
+  # background_image_dark_ios: "assets/dark-background-ios.png"
+  # branding_dark_ios: assets/dart_dark-ios.png
+
+  # Shared
+  # branding_bottom_padding_ios: 24
+  # ios_content_mode: center
+
+  #web
+  # color_web: "#42a5f5"
+  # color_dark_web: "#042a49"
+  # image_web: assets/splash-web.gif
+  # image_dark_web: assets/splash-invert-web.gif
+  # background_image_web: "assets/background-web.png"
+  # background_image_dark_web: "assets/dark-background-web.png"
+  # branding_web: assets/brand-web.gif
+  # branding_dark_web: assets/dart_dark-web.gif
+  # web_image_mode: center
+  
+  fullscreen: true
+
+  #To show the notification bar, add the following code to your Flutter app:
+  #SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top], );
+  
+  # info_plist_files:
+  #  - 'ios/Runner/Info-Debug.plist'
+  #  - 'ios/Runner/Info-Release.plist'

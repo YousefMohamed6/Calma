@@ -1,17 +1,17 @@
+import 'package:calmaa/common/extensions/common_extension.dart';
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/common/widget/full_name_with_blue_tick.dart';
+import 'package:calmaa/common/widget/gradient_text.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/livestream/livestream_user_state.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/widget/live_stream_background_blur_image.dart';
+import 'package:calmaa/utilities/style_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/common_extension.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/common/widget/full_name_with_blue_tick.dart';
-import 'package:shortzz/common/widget/gradient_text.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/livestream/livestream_user_state.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/widget/live_stream_background_blur_image.dart';
-import 'package:shortzz/utilities/style_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class LiveStreamSummary extends StatelessWidget {
   final LivestreamUserState? userState;

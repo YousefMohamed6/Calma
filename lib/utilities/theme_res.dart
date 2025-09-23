@@ -1,6 +1,6 @@
+import 'package:calmaa/utilities/color_res.dart';
+import 'package:calmaa/utilities/font_res.dart';
 import 'package:flutter/material.dart';
-import 'package:shortzz/utilities/color_res.dart';
-import 'package:shortzz/utilities/font_res.dart';
 
 class ThemeRes {
   /// Theme light mode

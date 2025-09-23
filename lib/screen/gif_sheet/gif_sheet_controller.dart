@@ -1,11 +1,11 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/functions/debounce_action.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/giphy_service.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/model/giphy/giphy_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/functions/debounce_action.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/giphy_service.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/model/giphy/giphy_model.dart';
 
 class GifSheetController extends BaseController {
   RxList<GiphyData> trendingList = <GiphyData>[].obs;

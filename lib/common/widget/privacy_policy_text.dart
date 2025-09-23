@@ -1,10 +1,10 @@
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/term_and_privacy_screen/term_and_privacy_screen.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/term_and_privacy_screen/term_and_privacy_screen.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class PrivacyPolicyText extends StatelessWidget {
   final Color? regularTextColor;

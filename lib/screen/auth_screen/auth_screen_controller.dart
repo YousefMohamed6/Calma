@@ -1,21 +1,21 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/functions/debounce_action.dart';
+import 'package:calmaa/common/manager/firebase_notification_manager.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/common_service.dart';
+import 'package:calmaa/common/service/api/notification_service.dart';
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/common/service/subscription/subscription_manager.dart';
+import 'package:calmaa/languages/dynamic_translations.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart' as user;
+import 'package:calmaa/screen/dashboard_screen/dashboard_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/functions/debounce_action.dart';
-import 'package:shortzz/common/manager/firebase_notification_manager.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/common_service.dart';
-import 'package:shortzz/common/service/api/notification_service.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/common/service/subscription/subscription_manager.dart';
-import 'package:shortzz/languages/dynamic_translations.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart' as user;
-import 'package:shortzz/screen/dashboard_screen/dashboard_screen.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 class AuthScreenController extends BaseController {

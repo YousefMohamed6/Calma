@@ -1,5 +1,5 @@
+import 'package:calmaa/model/livestream/app_user.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/model/livestream/app_user.dart';
 
 class LivestreamUserState {
   VideoAudioStatus audioStatus;
@@ -14,8 +14,9 @@ class LivestreamUserState {
   int joinStreamTime;
   AppUser? user;
 
-  LivestreamUserState({ this.audioStatus = VideoAudioStatus.on,
-    this.videoStatus = VideoAudioStatus.on,
+  LivestreamUserState(
+      {this.audioStatus = VideoAudioStatus.on,
+      this.videoStatus = VideoAudioStatus.on,
       required this.type,
       required this.userId,
       required this.liveCoin,

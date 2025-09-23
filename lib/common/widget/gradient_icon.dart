@@ -1,5 +1,5 @@
+import 'package:calmaa/utilities/style_res.dart';
 import 'package:flutter/material.dart';
-import 'package:shortzz/utilities/style_res.dart';
 
 class GradientIcon extends StatelessWidget {
   final Widget child;

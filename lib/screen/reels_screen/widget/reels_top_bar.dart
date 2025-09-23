@@ -1,10 +1,10 @@
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/widget/custom_back_button.dart';
+import 'package:calmaa/screen/reels_screen/reels_screen_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/widget/custom_back_button.dart';
-import 'package:shortzz/screen/reels_screen/reels_screen_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class ReelsTopBar extends StatelessWidget {
   final ReelsScreenController controller;
@@ -40,7 +40,8 @@ class ReelsTopBar extends StatelessWidget {
                     return const SizedBox(width: 30, height: 30);
                   }
 
-                  bool isVisible = controller.reels[controller.position.value].userId !=
+                  bool isVisible =
+                      controller.reels[controller.position.value].userId !=
                           SessionManager.instance.getUserID();
 
                   return Visibility(
@@ -48,7 +49,8 @@ class ReelsTopBar extends StatelessWidget {
                     replacement: const SizedBox(width: 30, height: 30),
                     child: InkWell(
                       onTap: controller.onReportTap,
-                      child: Image.asset(AssetRes.icAlert, width: 30, height: 30),
+                      child:
+                          Image.asset(AssetRes.icAlert, width: 30, height: 30),
                     ),
                   );
                 })

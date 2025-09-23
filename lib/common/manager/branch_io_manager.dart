@@ -1,14 +1,14 @@
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/service/api/post_service.dart';
+import 'package:calmaa/common/service/utils/params.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/share_sheet_widget/share_sheet_widget.dart';
+import 'package:calmaa/utilities/app_res.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_branch_sdk/flutter_branch_sdk.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/service/api/post_service.dart';
-import 'package:shortzz/common/service/utils/params.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/share_sheet_widget/share_sheet_widget.dart';
-import 'package:shortzz/utilities/app_res.dart';
 
 enum ShareBranchType { post, user, qr }
 

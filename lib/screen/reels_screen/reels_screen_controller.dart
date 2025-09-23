@@ -1,22 +1,22 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/functions/debounce_action.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/service/api/post_service.dart';
+import 'package:calmaa/common/service/video_cache_helper/video_cache_helper.dart';
+import 'package:calmaa/model/post_story/comment/fetch_comment_model.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
+import 'package:calmaa/screen/comment_sheet/helper/comment_helper.dart';
+import 'package:calmaa/screen/dashboard_screen/dashboard_screen_controller.dart';
+import 'package:calmaa/screen/home_screen/home_screen_controller.dart';
+import 'package:calmaa/screen/reels_screen/reel/reel_page_controller.dart';
+import 'package:calmaa/screen/report_sheet/report_sheet.dart';
+import 'package:calmaa/utilities/app_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/functions/debounce_action.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/service/api/post_service.dart';
-import 'package:shortzz/common/service/video_cache_helper/video_cache_helper.dart';
-import 'package:shortzz/model/post_story/comment/fetch_comment_model.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
-import 'package:shortzz/screen/comment_sheet/helper/comment_helper.dart';
-import 'package:shortzz/screen/dashboard_screen/dashboard_screen_controller.dart';
-import 'package:shortzz/screen/home_screen/home_screen_controller.dart';
-import 'package:shortzz/screen/reels_screen/reel/reel_page_controller.dart';
-import 'package:shortzz/screen/report_sheet/report_sheet.dart';
-import 'package:shortzz/utilities/app_res.dart';
 import 'package:video_player/video_player.dart';
 
 class ReelsScreenController extends BaseController {

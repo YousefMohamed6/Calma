@@ -1,10 +1,10 @@
 import 'dart:ui';
 
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
 
 class ProfilePreviewInteractiveScreen extends StatefulWidget {
   final User? user;

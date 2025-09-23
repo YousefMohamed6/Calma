@@ -1,11 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/widget/custom_page_indicator.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
 import 'package:dismissible_page/dismissible_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:photo_view/photo_view.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/widget/custom_page_indicator.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
 
 class ImageViewScreen extends StatefulWidget {
   final List<Images> images;

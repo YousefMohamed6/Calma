@@ -1,22 +1,22 @@
 import 'dart:io';
 
+import 'package:calmaa/common/widget/banner_ads_custom.dart';
+import 'package:calmaa/common/widget/gradient_border.dart';
+import 'package:calmaa/common/widget/gradient_icon.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/dashboard_screen/dashboard_screen_controller.dart';
+import 'package:calmaa/screen/explore_screen/explore_screen.dart';
+import 'package:calmaa/screen/feed_screen/feed_screen.dart';
+import 'package:calmaa/screen/home_screen/home_screen.dart';
+import 'package:calmaa/screen/live_stream/live_stream_search_screen/live_stream_search_screen.dart';
+import 'package:calmaa/screen/message_screen/message_screen.dart';
+import 'package:calmaa/screen/profile_screen/profile_screen.dart';
+import 'package:calmaa/utilities/style_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:proste_indexed_stack/proste_indexed_stack.dart';
-import 'package:shortzz/common/widget/banner_ads_custom.dart';
-import 'package:shortzz/common/widget/gradient_border.dart';
-import 'package:shortzz/common/widget/gradient_icon.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/dashboard_screen/dashboard_screen_controller.dart';
-import 'package:shortzz/screen/explore_screen/explore_screen.dart';
-import 'package:shortzz/screen/feed_screen/feed_screen.dart';
-import 'package:shortzz/screen/home_screen/home_screen.dart';
-import 'package:shortzz/screen/live_stream/live_stream_search_screen/live_stream_search_screen.dart';
-import 'package:shortzz/screen/message_screen/message_screen.dart';
-import 'package:shortzz/screen/profile_screen/profile_screen.dart';
-import 'package:shortzz/utilities/style_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class DashboardScreen extends StatelessWidget {
   final User? myUser;

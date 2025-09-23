@@ -1,14 +1,14 @@
 import 'dart:async';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/controller/follow_controller.dart';
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/model/user_model/follower_model.dart';
+import 'package:calmaa/model/user_model/following_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/follow_following_screen/follow_following_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/controller/follow_controller.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/model/user_model/follower_model.dart';
-import 'package:shortzz/model/user_model/following_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/follow_following_screen/follow_following_screen.dart';
 
 class FollowFollowingScreenController extends BaseController {
   RxInt selectedTabIndex = 0.obs;

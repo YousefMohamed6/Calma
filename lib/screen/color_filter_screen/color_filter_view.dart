@@ -1,11 +1,11 @@
 import 'dart:io';
 import 'dart:ui';
 
+import 'package:calmaa/common/manager/haptic_manager.dart';
+import 'package:calmaa/screen/color_filter_screen/widget/color_filtered.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
-import 'package:shortzz/common/manager/haptic_manager.dart';
-import 'package:shortzz/screen/color_filter_screen/widget/color_filtered.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class ColorFiltersView extends StatefulWidget {
   final Function(List<double> filter) onPageChanged;

@@ -1,7 +1,7 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/service/api/gift_wallet_service.dart';
+import 'package:calmaa/model/gift_wallet/withdraw_model.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/service/api/gift_wallet_service.dart';
-import 'package:shortzz/model/gift_wallet/withdraw_model.dart';
 
 class WithdrawalsScreenController extends BaseController {
   RxList<Withdraw> withdraws = <Withdraw>[].obs;

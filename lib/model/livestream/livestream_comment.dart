@@ -1,7 +1,7 @@
+import 'package:calmaa/common/controller/firebase_firestore_controller.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/model/livestream/app_user.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/firebase_firestore_controller.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/model/livestream/app_user.dart';
 
 class LivestreamComment {
   int? senderId;

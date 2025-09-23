@@ -1,18 +1,18 @@
 import 'package:audio_waveforms/audio_waveforms.dart';
+import 'package:calmaa/common/enum/chat_enum.dart';
+import 'package:calmaa/common/widget/custom_divider.dart';
+import 'package:calmaa/common/widget/gradient_text.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/chat/chat_thread.dart';
+import 'package:calmaa/screen/chat_screen/chat_screen_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/color_res.dart';
+import 'package:calmaa/utilities/style_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/enum/chat_enum.dart';
-import 'package:shortzz/common/widget/custom_divider.dart';
-import 'package:shortzz/common/widget/gradient_text.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/chat/chat_thread.dart';
-import 'package:shortzz/screen/chat_screen/chat_screen_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/color_res.dart';
-import 'package:shortzz/utilities/style_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class ChatBottomActionView extends StatelessWidget {
   final ChatScreenController controller;
@@ -154,12 +154,12 @@ class ChatTextField extends StatelessWidget {
                           actions.length,
                           (index) {
                             return InkWell(
-                              onTap: () => onChatActionTap?.call(actions[index]),
+                              onTap: () =>
+                                  onChatActionTap?.call(actions[index]),
                               child: Container(
                                 padding: const EdgeInsets.all(5),
                                 child: Image.asset(actions[index].image,
-                                    width: 25,
-                                    height: 25),
+                                    width: 25, height: 25),
                               ),
                             );
                           },

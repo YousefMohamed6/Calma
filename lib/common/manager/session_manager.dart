@@ -1,9 +1,9 @@
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/utilities/app_res.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/utilities/app_res.dart';
 
 class SessionManager {
   static var instance = SessionManager();

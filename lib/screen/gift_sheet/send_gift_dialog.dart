@@ -1,15 +1,15 @@
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/common/widget/gradient_text.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/utilities/app_res.dart';
+import 'package:calmaa/utilities/style_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/common/widget/gradient_text.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/utilities/app_res.dart';
-import 'package:shortzz/utilities/style_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class SendGiftDialog extends StatefulWidget {
   final Gift gift;
@@ -33,13 +33,15 @@ class _SendGiftDialogState extends State<SendGiftDialog> {
   Widget build(BuildContext context) {
     return Dialog(
       backgroundColor: whitePure(context),
-      shape: RoundedRectangleBorder(borderRadius: SmoothBorderRadius(cornerRadius: 20)),
+      shape: RoundedRectangleBorder(
+          borderRadius: SmoothBorderRadius(cornerRadius: 20)),
       alignment: const Alignment(0, 0.4),
       child: AspectRatio(
         aspectRatio: 1.8,
         child: Container(
           decoration: ShapeDecoration(
-              shape: SmoothRectangleBorder(borderRadius: SmoothBorderRadius(cornerRadius: 20)),
+              shape: SmoothRectangleBorder(
+                  borderRadius: SmoothBorderRadius(cornerRadius: 20)),
               color: whitePure(context)),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

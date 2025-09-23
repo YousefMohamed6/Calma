@@ -1,27 +1,27 @@
 import 'dart:async';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/functions/debounce_action.dart';
+import 'package:calmaa/common/manager/branch_io_manager.dart';
+import 'package:calmaa/common/manager/firebase_notification_manager.dart';
+import 'package:calmaa/common/manager/haptic_manager.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/post_service.dart';
+import 'package:calmaa/common/service/navigation/navigate_with_controller.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/general/status_model.dart';
+import 'package:calmaa/model/post_story/music/music_model.dart';
+import 'package:calmaa/model/post_story/post_by_id.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/audio_details_screen/audio_sheet.dart';
+import 'package:calmaa/screen/comment_sheet/comment_sheet.dart';
+import 'package:calmaa/screen/gift_sheet/send_gift_sheet_controller.dart';
+import 'package:calmaa/screen/post_screen/post_screen_controller.dart';
+import 'package:calmaa/screen/saved_post_screen/saved_post_screen_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/functions/debounce_action.dart';
-import 'package:shortzz/common/manager/branch_io_manager.dart';
-import 'package:shortzz/common/manager/firebase_notification_manager.dart';
-import 'package:shortzz/common/manager/haptic_manager.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/post_service.dart';
-import 'package:shortzz/common/service/navigation/navigate_with_controller.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/general/status_model.dart';
-import 'package:shortzz/model/post_story/music/music_model.dart';
-import 'package:shortzz/model/post_story/post_by_id.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/audio_details_screen/audio_sheet.dart';
-import 'package:shortzz/screen/comment_sheet/comment_sheet.dart';
-import 'package:shortzz/screen/gift_sheet/send_gift_sheet_controller.dart';
-import 'package:shortzz/screen/post_screen/post_screen_controller.dart';
-import 'package:shortzz/screen/saved_post_screen/saved_post_screen_controller.dart';
 
 class ReelController extends BaseController {
   Rx<Post> reelData;

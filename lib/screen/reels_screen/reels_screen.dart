@@ -1,17 +1,17 @@
+import 'package:calmaa/common/widget/loader_widget.dart';
+import 'package:calmaa/common/widget/my_refresh_indicator.dart';
+import 'package:calmaa/common/widget/no_data_widget.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/post_story/post_by_id.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
+import 'package:calmaa/screen/comment_sheet/widget/hashtag_and_mention_view.dart';
+import 'package:calmaa/screen/reels_screen/reel/reel_page.dart';
+import 'package:calmaa/screen/reels_screen/reels_screen_controller.dart';
+import 'package:calmaa/screen/reels_screen/widget/reels_text_field.dart';
+import 'package:calmaa/screen/reels_screen/widget/reels_top_bar.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/loader_widget.dart';
-import 'package:shortzz/common/widget/my_refresh_indicator.dart';
-import 'package:shortzz/common/widget/no_data_widget.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/post_story/post_by_id.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
-import 'package:shortzz/screen/comment_sheet/widget/hashtag_and_mention_view.dart';
-import 'package:shortzz/screen/reels_screen/reel/reel_page.dart';
-import 'package:shortzz/screen/reels_screen/reels_screen_controller.dart';
-import 'package:shortzz/screen/reels_screen/widget/reels_text_field.dart';
-import 'package:shortzz/screen/reels_screen/widget/reels_top_bar.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 import 'package:video_player/video_player.dart';
 
 class ReelsScreen extends StatelessWidget {

@@ -1,11 +1,11 @@
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/camera_edit_screen/text_story/story_text_view_controller.dart';
+import 'package:calmaa/screen/edit_profile_screen/widget/base_select_sheet.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/camera_edit_screen/text_story/story_text_view_controller.dart';
-import 'package:shortzz/screen/edit_profile_screen/widget/base_select_sheet.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class StoryTextFontWidget extends StatelessWidget {
   const StoryTextFontWidget({super.key});
@@ -25,7 +25,8 @@ class StoryTextFontWidget extends StatelessWidget {
               width: 30,
               margin: const EdgeInsets.symmetric(horizontal: 10),
               decoration: BoxDecoration(
-                  color: whitePure(context).withValues(alpha: .3), shape: BoxShape.circle),
+                  color: whitePure(context).withValues(alpha: .3),
+                  shape: BoxShape.circle),
               alignment: Alignment.center,
               child: RotatedBox(
                   quarterTurns: 2,
@@ -39,7 +40,8 @@ class StoryTextFontWidget extends StatelessWidget {
                 itemCount: controller.outerFontFamilyList.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  GoogleFontFamily fontFamily = controller.outerFontFamilyList[index];
+                  GoogleFontFamily fontFamily =
+                      controller.outerFontFamilyList[index];
                   return InkWell(
                     onTap: () => controller.onFontFamilySelect(fontFamily, 0),
                     child: Obx(
@@ -53,8 +55,8 @@ class StoryTextFontWidget extends StatelessWidget {
                           margin: const EdgeInsets.symmetric(horizontal: 2),
                           decoration: ShapeDecoration(
                               shape: SmoothRectangleBorder(
-                                borderRadius:
-                                    SmoothBorderRadius(cornerRadius: 5, cornerSmoothing: 1),
+                                borderRadius: SmoothBorderRadius(
+                                    cornerRadius: 5, cornerSmoothing: 1),
                               ),
                               color: isSelected
                                   ? whitePure(context)

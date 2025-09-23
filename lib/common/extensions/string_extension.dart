@@ -1,17 +1,17 @@
 import 'dart:io';
 import 'dart:math';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/manager/haptic_manager.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/widget/dominant_color.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/general/status_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/manager/haptic_manager.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/widget/dominant_color.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/general/status_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 extension StringExtention on String {

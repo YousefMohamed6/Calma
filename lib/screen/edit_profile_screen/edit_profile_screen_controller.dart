@@ -1,23 +1,23 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/functions/media_picker_helper.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/common/widget/confirmation_dialog.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/model/user_model/links_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/edit_profile_screen/widget/add_edit_link_sheet.dart';
+import 'package:calmaa/screen/edit_profile_screen/widget/phone_codes_screen_controller.dart';
+import 'package:calmaa/screen/feed_screen/feed_screen_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/functions/media_picker_helper.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/common/widget/confirmation_dialog.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/model/user_model/links_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/edit_profile_screen/widget/add_edit_link_sheet.dart';
-import 'package:shortzz/screen/edit_profile_screen/widget/phone_codes_screen_controller.dart';
-import 'package:shortzz/screen/feed_screen/feed_screen_controller.dart';
 
 class EditProfileScreenController extends BaseController {
   final phoneController = Get.put(PhoneCodesScreenController());

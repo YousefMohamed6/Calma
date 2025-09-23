@@ -1,7 +1,7 @@
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/color_res.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/color_res.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 enum UserRequestAction {
   block,
@@ -32,8 +32,6 @@ enum UserRequestAction {
 
   Color titleColor(BuildContext context) => titleColors(context)[this]!;
 }
-
-
 
 enum ChatAction {
   gift,

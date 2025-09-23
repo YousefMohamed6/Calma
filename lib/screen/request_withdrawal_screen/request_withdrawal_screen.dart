@@ -1,18 +1,18 @@
+import 'package:calmaa/common/extensions/common_extension.dart';
+import 'package:calmaa/common/widget/custom_app_bar.dart';
+import 'package:calmaa/common/widget/custom_drop_down.dart';
+import 'package:calmaa/common/widget/privacy_policy_text.dart';
+import 'package:calmaa/common/widget/text_button_custom.dart';
+import 'package:calmaa/common/widget/text_field_custom.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/request_withdrawal_screen/request_withdrawal_screen_controller.dart';
+import 'package:calmaa/utilities/app_res.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/common_extension.dart';
-import 'package:shortzz/common/widget/custom_app_bar.dart';
-import 'package:shortzz/common/widget/custom_drop_down.dart';
-import 'package:shortzz/common/widget/privacy_policy_text.dart';
-import 'package:shortzz/common/widget/text_button_custom.dart';
-import 'package:shortzz/common/widget/text_field_custom.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/request_withdrawal_screen/request_withdrawal_screen_controller.dart';
-import 'package:shortzz/utilities/app_res.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class RequestWithdrawalScreen extends StatelessWidget {
   const RequestWithdrawalScreen({super.key});
@@ -35,7 +35,8 @@ class RequestWithdrawalScreen extends StatelessWidget {
                   children: [
                     Container(
                       decoration: BoxDecoration(color: bgLightGrey(context)),
-                      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 40, vertical: 10),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -43,9 +44,11 @@ class RequestWithdrawalScreen extends StatelessWidget {
                             children: [
                               Obx(
                                 () => Text(
-                                  (controller.myUser.value?.coinWallet ?? 0).numberFormat,
+                                  (controller.myUser.value?.coinWallet ?? 0)
+                                      .numberFormat,
                                   style: TextStyleCustom.outFitExtraBold800(
-                                      color: textDarkGrey(context), fontSize: 28),
+                                      color: textDarkGrey(context),
+                                      fontSize: 28),
                                 ),
                               ),
                               Text(LKey.coinBalance.tr,
@@ -60,8 +63,9 @@ class RequestWithdrawalScreen extends StatelessWidget {
                             children: [
                               Text(
                                 controller.myUser.value
-                                        ?.coinEstimatedValue(
-                                            controller.settings.value?.coinValue?.toDouble())
+                                        ?.coinEstimatedValue(controller
+                                            .settings.value?.coinValue
+                                            ?.toDouble())
                                         .currencyFormat ??
                                     '',
                                 style: TextStyleCustom.outFitExtraBold800(
@@ -115,8 +119,12 @@ class RequestWithdrawalScreen extends StatelessWidget {
                     color: textDarkGrey(context),
                     alignment: Alignment.center,
                     margin: EdgeInsets.only(
-                        right: TextDirection.ltr == Directionality.of(context) ? 13 : 0,
-                        left: TextDirection.rtl == Directionality.of(context) ? 13 : 0),
+                        right: TextDirection.ltr == Directionality.of(context)
+                            ? 13
+                            : 0,
+                        left: TextDirection.rtl == Directionality.of(context)
+                            ? 13
+                            : 0),
                     child: Image.asset(AssetRes.icCoin, width: 23, height: 23)),
               ),
               Obx(
@@ -132,27 +140,34 @@ class RequestWithdrawalScreen extends StatelessWidget {
                       color: textDarkGrey(context),
                       alignment: Alignment.center,
                       margin: EdgeInsets.only(
-                          right: TextDirection.ltr == Directionality.of(context) ? 13 : 0,
-                          left: TextDirection.rtl == Directionality.of(context) ? 13 : 0),
+                          right: TextDirection.ltr == Directionality.of(context)
+                              ? 13
+                              : 0,
+                          left: TextDirection.rtl == Directionality.of(context)
+                              ? 13
+                              : 0),
                       child: Text(
                         controller.settings.value?.currency ?? AppRes.currency,
-                        style:
-                            TextStyleCustom.outFitLight300(fontSize: 20, color: whitePure(context)),
+                        style: TextStyleCustom.outFitLight300(
+                            fontSize: 20, color: whitePure(context)),
                       )),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 20.0, bottom: 5, right: 20),
+                padding:
+                    const EdgeInsets.only(left: 20.0, bottom: 5, right: 20),
                 child: Text(LKey.selectGateway.tr,
                     style: TextStyleCustom.outFitRegular400(
                         color: textDarkGrey(context), fontSize: 17)),
               ),
               Obx(() {
-                var listFromApi = (controller.settings.value?.redeemGateways ?? [])
-                    .map((e) => e.title ?? '')
-                    .toList();
-                var redeemGateways =
-                    listFromApi.isEmpty ? [AppRes.emptyGatewayMessage] : listFromApi;
+                var listFromApi =
+                    (controller.settings.value?.redeemGateways ?? [])
+                        .map((e) => e.title ?? '')
+                        .toList();
+                var redeemGateways = listFromApi.isEmpty
+                    ? [AppRes.emptyGatewayMessage]
+                    : listFromApi;
                 return CustomDropDownBtn<String>(
                     items: redeemGateways,
                     selectedValue: controller.selectedGateway.value.isEmpty

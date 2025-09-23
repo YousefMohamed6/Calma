@@ -1,11 +1,11 @@
+import 'package:calmaa/common/widget/load_more_widget.dart';
+import 'package:calmaa/common/widget/loader_widget.dart';
+import 'package:calmaa/common/widget/no_data_widget.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
+import 'package:calmaa/screen/post_screen/post_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/load_more_widget.dart';
-import 'package:shortzz/common/widget/loader_widget.dart';
-import 'package:shortzz/common/widget/no_data_widget.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
-import 'package:shortzz/screen/post_screen/post_card.dart';
 
 class PostList extends StatelessWidget {
   final RxList<Post> posts;

@@ -1,19 +1,19 @@
+import 'package:calmaa/common/extensions/common_extension.dart';
+import 'package:calmaa/common/widget/custom_divider.dart';
+import 'package:calmaa/common/widget/custom_tab_switcher.dart';
+import 'package:calmaa/common/widget/load_more_widget.dart';
+import 'package:calmaa/common/widget/post_list.dart';
+import 'package:calmaa/common/widget/reel_list.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/location_screen/location_screen_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:shortzz/common/extensions/common_extension.dart';
-import 'package:shortzz/common/widget/custom_divider.dart';
-import 'package:shortzz/common/widget/custom_tab_switcher.dart';
-import 'package:shortzz/common/widget/load_more_widget.dart';
-import 'package:shortzz/common/widget/post_list.dart';
-import 'package:shortzz/common/widget/reel_list.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/location_screen/location_screen_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class LocationScreen extends StatelessWidget {
   final LatLng latLng;

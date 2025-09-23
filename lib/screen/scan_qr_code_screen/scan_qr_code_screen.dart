@@ -1,5 +1,18 @@
 import 'dart:io';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/functions/media_picker_helper.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/service/api/api_service.dart';
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/common/service/navigation/navigate_with_controller.dart';
+import 'package:calmaa/common/widget/custom_app_bar.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/const_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -7,19 +20,6 @@ import 'package:google_mlkit_barcode_scanning/google_mlkit_barcode_scanning.dart
     as qr;
 import 'package:image_picker/image_picker.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/functions/media_picker_helper.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/service/api/api_service.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/common/service/navigation/navigate_with_controller.dart';
-import 'package:shortzz/common/widget/custom_app_bar.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/const_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class ScanQrCodeScreen extends StatefulWidget {
   const ScanQrCodeScreen({super.key});

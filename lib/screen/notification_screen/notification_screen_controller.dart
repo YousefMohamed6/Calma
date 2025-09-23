@@ -1,17 +1,17 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/service/api/notification_service.dart';
+import 'package:calmaa/common/service/api/post_service.dart';
+import 'package:calmaa/common/service/navigation/navigate_with_controller.dart';
+import 'package:calmaa/model/misc/activity_notification_model.dart';
+import 'package:calmaa/model/misc/admin_notification_model.dart';
+import 'package:calmaa/model/post_story/post_by_id.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/notification_screen/widget/activity_notification_page.dart';
+import 'package:calmaa/screen/post_screen/single_post_screen.dart';
+import 'package:calmaa/screen/reels_screen/reels_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/service/api/notification_service.dart';
-import 'package:shortzz/common/service/api/post_service.dart';
-import 'package:shortzz/common/service/navigation/navigate_with_controller.dart';
-import 'package:shortzz/model/misc/activity_notification_model.dart';
-import 'package:shortzz/model/misc/admin_notification_model.dart';
-import 'package:shortzz/model/post_story/post_by_id.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/notification_screen/widget/activity_notification_page.dart';
-import 'package:shortzz/screen/post_screen/single_post_screen.dart';
-import 'package:shortzz/screen/reels_screen/reels_screen.dart';
 
 class NotificationScreenController extends BaseController {
   RxInt selectedTabIndex = RxInt(0);
@@ -64,7 +64,6 @@ class NotificationScreenController extends BaseController {
     }
   }
 
-
   void onPostTap(ActivityNotification? data) async {
     Post? post = data?.data?.post;
     int? commentId = data?.data?.comment?.id;
@@ -88,9 +87,9 @@ class NotificationScreenController extends BaseController {
     if (postType == PostType.reel) {
       Get.to(() => ReelsScreen(
             reels: [fetchedPost].obs,
-        position: 0,
-        postByIdData: result.data,
-      ));
+            position: 0,
+            postByIdData: result.data,
+          ));
     } else if ([PostType.image, PostType.video, PostType.text]
         .contains(postType)) {
       Get.to(() => SinglePostScreen(

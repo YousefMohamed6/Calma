@@ -1,5 +1,5 @@
-import 'package:shortzz/model/post_story/hashtag_model.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
+import 'package:calmaa/model/post_story/hashtag_model.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
 
 class ExplorePageModel {
   ExplorePageModel({
@@ -59,7 +59,8 @@ class ExplorePageData {
       map['hashtags'] = hashtags?.map((v) => v.toJson()).toList();
     }
     if (highPostHashtags != null) {
-      map['highPostHashtags'] = highPostHashtags?.map((v) => v.toJson()).toList();
+      map['highPostHashtags'] =
+          highPostHashtags?.map((v) => v.toJson()).toList();
     }
     return map;
   }

@@ -1,18 +1,18 @@
+import 'package:calmaa/common/extensions/common_extension.dart';
+import 'package:calmaa/common/manager/haptic_manager.dart';
+import 'package:calmaa/common/widget/text_button_custom.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/livestream/livestream.dart';
+import 'package:calmaa/model/livestream/livestream_user_state.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/livestream_screen_controller.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/widget/members_sheet.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/color_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/common_extension.dart';
-import 'package:shortzz/common/manager/haptic_manager.dart';
-import 'package:shortzz/common/widget/text_button_custom.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/livestream/livestream.dart';
-import 'package:shortzz/model/livestream/livestream_user_state.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/livestream_screen_controller.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/widget/members_sheet.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/color_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class LiveStreamHostTopView extends StatelessWidget {
   final LivestreamScreenController controller;
@@ -65,16 +65,16 @@ class LiveStreamHostTopView extends StatelessWidget {
                             title: (userState?.totalCoin ?? 0).numberFormat,
                             imageIcon: AssetRes.icCoin),
                         LiveStreamCircleBorderButton(
-                            image: AssetRes.icAudience,
-                            margin: const EdgeInsets.all(0),
-                            size: const Size(30, 30),
-                            iconSize: 18,
-                            iconColor: whitePure(context),
-                            onTap: () {
-                              Get.bottomSheet(const MembersSheet(isHost: true),
-                                  isScrollControlled: true);
-                            },
-                          ),
+                          image: AssetRes.icAudience,
+                          margin: const EdgeInsets.all(0),
+                          size: const Size(30, 30),
+                          iconSize: 18,
+                          iconColor: whitePure(context),
+                          onTap: () {
+                            Get.bottomSheet(const MembersSheet(isHost: true),
+                                isScrollControlled: true);
+                          },
+                        ),
                         if (isVisibleBattleBtn)
                           Expanded(
                             child: InkWell(

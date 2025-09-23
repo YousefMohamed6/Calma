@@ -1,17 +1,17 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/controller/firebase_firestore_controller.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/common/widget/confirmation_dialog.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/model/general/status_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/auth_screen/login_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart' as auth;
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/controller/firebase_firestore_controller.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/common/widget/confirmation_dialog.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/model/general/status_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/auth_screen/login_screen.dart';
 
 class SettingsScreenController extends BaseController {
   Rx<User?> myUser = Rx<User?>(null);

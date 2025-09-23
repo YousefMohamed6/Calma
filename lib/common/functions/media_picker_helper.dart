@@ -2,18 +2,18 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:math';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/extensions/common_extension.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/widget/confirmation_dialog.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/utilities/app_res.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:mime/mime.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/extensions/common_extension.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/widget/confirmation_dialog.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/utilities/app_res.dart';
 import 'package:video_compress/video_compress.dart';
 
 class MediaPickerHelper {

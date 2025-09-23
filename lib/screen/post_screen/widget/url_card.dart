@@ -1,12 +1,12 @@
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/service/url_extractor/parsers/base_parser.dart';
+import 'package:calmaa/common/widget/custom_bg_circle_button.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/service/url_extractor/parsers/base_parser.dart';
-import 'package:shortzz/common/widget/custom_bg_circle_button.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class UrlCard extends StatelessWidget {
   final UrlMetadata? metadata;

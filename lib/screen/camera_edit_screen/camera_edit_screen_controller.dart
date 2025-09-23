@@ -2,36 +2,36 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:audio_waveforms/audio_waveforms.dart';
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/extensions/common_extension.dart';
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/functions/generate_color.dart';
+import 'package:calmaa/common/functions/media_picker_helper.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/screenshot_manager.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/post_service.dart';
+import 'package:calmaa/common/service/sight_engin/sight_engine_service.dart';
+import 'package:calmaa/common/service/utils/params.dart';
+import 'package:calmaa/common/widget/confirmation_dialog.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/post_story/story/story_model.dart';
+import 'package:calmaa/screen/camera_screen/camera_screen.dart';
+import 'package:calmaa/screen/camera_screen/camera_screen_controller.dart';
+import 'package:calmaa/screen/color_filter_screen/widget/color_filtered.dart';
+import 'package:calmaa/screen/create_feed_screen/create_feed_screen.dart';
+import 'package:calmaa/screen/dashboard_screen/dashboard_screen_controller.dart';
+import 'package:calmaa/screen/feed_screen/feed_screen_controller.dart';
+import 'package:calmaa/screen/music_sheet/music_sheet.dart';
+import 'package:calmaa/screen/profile_screen/profile_screen_controller.dart';
+import 'package:calmaa/screen/selected_music_sheet/selected_music_sheet.dart';
+import 'package:calmaa/screen/selected_music_sheet/selected_music_sheet_controller.dart';
+import 'package:calmaa/utilities/app_res.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:retrytech_plugin/retrytech_plugin.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/extensions/common_extension.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/functions/generate_color.dart';
-import 'package:shortzz/common/functions/media_picker_helper.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/screenshot_manager.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/post_service.dart';
-import 'package:shortzz/common/service/sight_engin/sight_engine_service.dart';
-import 'package:shortzz/common/service/utils/params.dart';
-import 'package:shortzz/common/widget/confirmation_dialog.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/post_story/story/story_model.dart';
-import 'package:shortzz/screen/camera_screen/camera_screen.dart';
-import 'package:shortzz/screen/camera_screen/camera_screen_controller.dart';
-import 'package:shortzz/screen/color_filter_screen/widget/color_filtered.dart';
-import 'package:shortzz/screen/create_feed_screen/create_feed_screen.dart';
-import 'package:shortzz/screen/dashboard_screen/dashboard_screen_controller.dart';
-import 'package:shortzz/screen/feed_screen/feed_screen_controller.dart';
-import 'package:shortzz/screen/music_sheet/music_sheet.dart';
-import 'package:shortzz/screen/profile_screen/profile_screen_controller.dart';
-import 'package:shortzz/screen/selected_music_sheet/selected_music_sheet.dart';
-import 'package:shortzz/screen/selected_music_sheet/selected_music_sheet_controller.dart';
-import 'package:shortzz/utilities/app_res.dart';
 import 'package:video_player/video_player.dart';
 
 import 'text_story/story_text_view_controller.dart';
@@ -656,11 +656,11 @@ class CameraEditScreenController extends BaseController {
     videoPlayerController.value?.pause();
 
     final SelectedMusic? selectedMusic = await Get.bottomSheet<SelectedMusic?>(
-      initialMusic != null
-          ? SelectedMusicSheet(
-              selectedMusic: initialMusic, totalVideoSecond: duration)
-          : MusicSheet(videoDurationInSecond: duration),
-      isScrollControlled: true,
+        initialMusic != null
+            ? SelectedMusicSheet(
+                selectedMusic: initialMusic, totalVideoSecond: duration)
+            : MusicSheet(videoDurationInSecond: duration),
+        isScrollControlled: true,
         isDismissible: false,
         enableDrag: false);
 

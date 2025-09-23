@@ -1,25 +1,25 @@
 import 'dart:ui';
 
+import 'package:calmaa/common/extensions/common_extension.dart';
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/common/widget/custom_search_text_field.dart';
+import 'package:calmaa/common/widget/full_name_with_blue_tick.dart';
+import 'package:calmaa/common/widget/loader_widget.dart';
+import 'package:calmaa/common/widget/no_data_widget.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/livestream/app_user.dart';
+import 'package:calmaa/model/livestream/livestream.dart';
+import 'package:calmaa/screen/live_stream/create_live_stream_screen/create_live_stream_screen.dart';
+import 'package:calmaa/screen/live_stream/live_stream_search_screen/live_stream_search_screen_controller.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/widget/live_stream_background_blur_image.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/color_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/common_extension.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/common/widget/custom_search_text_field.dart';
-import 'package:shortzz/common/widget/full_name_with_blue_tick.dart';
-import 'package:shortzz/common/widget/loader_widget.dart';
-import 'package:shortzz/common/widget/no_data_widget.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/livestream/app_user.dart';
-import 'package:shortzz/model/livestream/livestream.dart';
-import 'package:shortzz/screen/live_stream/create_live_stream_screen/create_live_stream_screen.dart';
-import 'package:shortzz/screen/live_stream/live_stream_search_screen/live_stream_search_screen_controller.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/widget/live_stream_background_blur_image.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/color_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class LiveStreamSearchScreen extends StatelessWidget {
   const LiveStreamSearchScreen({super.key});

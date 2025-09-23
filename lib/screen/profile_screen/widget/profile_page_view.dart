@@ -1,14 +1,14 @@
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/widget/no_data_widget.dart';
+import 'package:calmaa/common/widget/post_list.dart';
+import 'package:calmaa/common/widget/reel_list.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/profile_screen/profile_screen_controller.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/widget/no_data_widget.dart';
-import 'package:shortzz/common/widget/post_list.dart';
-import 'package:shortzz/common/widget/reel_list.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/profile_screen/profile_screen_controller.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class ProfilePageView extends StatelessWidget {
   final ProfileScreenController controller;

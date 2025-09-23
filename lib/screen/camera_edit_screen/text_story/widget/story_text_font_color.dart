@@ -1,8 +1,8 @@
+import 'package:calmaa/common/functions/generate_color.dart';
+import 'package:calmaa/screen/camera_edit_screen/text_story/story_text_view_controller.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/functions/generate_color.dart';
-import 'package:shortzz/screen/camera_edit_screen/text_story/story_text_view_controller.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class StoryTextFontColor extends StatelessWidget {
   const StoryTextFontColor({super.key});

@@ -1,16 +1,16 @@
 import 'dart:math';
 
 import 'package:audio_waveforms/audio_waveforms.dart';
+import 'package:calmaa/common/widget/gradient_icon.dart';
+import 'package:calmaa/model/chat/message_data.dart';
+import 'package:calmaa/screen/chat_screen/chat_screen_controller.dart';
+import 'package:calmaa/screen/chat_screen/widget/chat_center_message_view.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/style_res.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/gradient_icon.dart';
-import 'package:shortzz/model/chat/message_data.dart';
-import 'package:shortzz/screen/chat_screen/chat_screen_controller.dart';
-import 'package:shortzz/screen/chat_screen/widget/chat_center_message_view.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/style_res.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class ChatAudioMessage extends StatelessWidget {
   final MessageData message;

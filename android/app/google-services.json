@@ -7,17 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:774602819167:android:d0d36eb2a54f9abc6efdea",
+        "mobilesdk_app_id": "1:774602819167:android:451f4124c37d8df06efdea",
         "android_client_info": {
-          "package_name": "com.retrytech.shortzz.apps"
+          "package_name": "com.metafortech.calmaa"
         }
       },
       "oauth_client": [
         {
-          "client_id": "774602819167-29dj551nkr9gqt7jgpvgvrt2pimhl1ld.apps.googleusercontent.com",
+          "client_id": "774602819167-qghncohu2u8qk0gjfqa01mn39sipmakr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.retrytech.shortzz.apps",
+            "package_name": "com.metafortech.calmaa",
             "certificate_hash": "b3d90b266a0e8ed9cc9b41fbdb63b933796013be"
           }
         },
@@ -39,10 +39,10 @@
               "client_type": 3
             },
             {
-              "client_id": "774602819167-m9ro4gcitqg94vo6omjgt6i35m81881o.apps.googleusercontent.com",
+              "client_id": "774602819167-1h15sli9ahd32r9td4oim9e0dbt5pam5.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.retrytech.bubbly"
+                "bundle_id": "com.metafortech.calmaa"
               }
             }
           ]

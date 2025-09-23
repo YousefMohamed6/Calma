@@ -1,10 +1,10 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/subscription/subscription_manager.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
 import 'package:get/get.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/subscription/subscription_manager.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
 
 class SubscriptionScreenController extends BaseController {
   RxList<Package> packages = <Package>[].obs;
@@ -25,7 +25,8 @@ class SubscriptionScreenController extends BaseController {
   void onMakePurchase() async {
     if (selectedPackage.value != null) {
       showLoader();
-      bool? status = await SubscriptionManager.shared.makePurchase(selectedPackage.value!);
+      bool? status =
+          await SubscriptionManager.shared.makePurchase(selectedPackage.value!);
       stopLoader();
       if (status == true) {
         User? user = SessionManager.instance.getUser();

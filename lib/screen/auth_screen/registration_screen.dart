@@ -1,16 +1,16 @@
+import 'package:calmaa/common/widget/custom_back_button.dart';
+import 'package:calmaa/common/widget/gradient_text.dart';
+import 'package:calmaa/common/widget/privacy_policy_text.dart';
+import 'package:calmaa/common/widget/text_button_custom.dart';
+import 'package:calmaa/common/widget/text_field_custom.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/auth_screen/auth_screen_controller.dart';
+import 'package:calmaa/utilities/style_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/custom_back_button.dart';
-import 'package:shortzz/common/widget/gradient_text.dart';
-import 'package:shortzz/common/widget/privacy_policy_text.dart';
-import 'package:shortzz/common/widget/text_button_custom.dart';
-import 'package:shortzz/common/widget/text_field_custom.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/auth_screen/auth_screen_controller.dart';
-import 'package:shortzz/utilities/style_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class RegistrationScreen extends StatelessWidget {
   const RegistrationScreen({super.key});
@@ -35,7 +35,8 @@ class RegistrationScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 20.0, right: 20, top: 40, bottom: 30),
+                    padding: const EdgeInsets.only(
+                        left: 20.0, right: 20, top: 40, bottom: 30),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -82,11 +83,13 @@ class RegistrationScreen extends StatelessWidget {
                 horizontalMargin: 20,
                 titleColor: whitePure(context)),
             SizedBox(height: AppBar().preferredSize.height / 1.2),
-            const SafeArea(top: false, maintainBottomViewPadding: true, child: PrivacyPolicyText()),
+            const SafeArea(
+                top: false,
+                maintainBottomViewPadding: true,
+                child: PrivacyPolicyText()),
           ],
         ),
       ),
     );
   }
 }
-

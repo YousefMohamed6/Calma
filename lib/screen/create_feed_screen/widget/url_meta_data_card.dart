@@ -1,8 +1,8 @@
+import 'package:calmaa/common/service/url_extractor/parsers/base_parser.dart';
+import 'package:calmaa/screen/create_feed_screen/create_feed_screen_controller.dart';
+import 'package:calmaa/screen/post_screen/widget/url_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/service/url_extractor/parsers/base_parser.dart';
-import 'package:shortzz/screen/create_feed_screen/create_feed_screen_controller.dart';
-import 'package:shortzz/screen/post_screen/widget/url_card.dart';
 
 class UrlMetaDataCard extends StatefulWidget {
   final CreateFeedScreenController controller;

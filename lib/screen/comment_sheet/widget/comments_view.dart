@@ -1,15 +1,15 @@
+import 'package:calmaa/common/widget/highlight_wrapper.dart';
+import 'package:calmaa/common/widget/load_more_widget.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/post_story/comment/fetch_comment_model.dart';
+import 'package:calmaa/screen/comment_sheet/comment_sheet_controller.dart';
+import 'package:calmaa/screen/comment_sheet/widget/comment_card.dart';
+import 'package:calmaa/screen/comment_sheet/widget/reply_comments.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/highlight_wrapper.dart';
-import 'package:shortzz/common/widget/load_more_widget.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/post_story/comment/fetch_comment_model.dart';
-import 'package:shortzz/screen/comment_sheet/comment_sheet_controller.dart';
-import 'package:shortzz/screen/comment_sheet/widget/comment_card.dart';
-import 'package:shortzz/screen/comment_sheet/widget/reply_comments.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class CommentsView extends StatelessWidget {
   final CommentSheetController controller;

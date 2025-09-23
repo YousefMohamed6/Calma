@@ -1,25 +1,25 @@
 import 'dart:convert';
 
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/service/api/post_service.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/common/widget/full_name_with_blue_tick.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/chat/message_data.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/chat_screen/chat_screen_controller.dart';
+import 'package:calmaa/screen/chat_screen/widget/chat_center_message_view.dart';
+import 'package:calmaa/screen/post_screen/widget/post_view_center.dart';
+import 'package:calmaa/utilities/app_res.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/font_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:readmore/readmore.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/service/api/post_service.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/common/widget/full_name_with_blue_tick.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/chat/message_data.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/chat_screen/chat_screen_controller.dart';
-import 'package:shortzz/screen/chat_screen/widget/chat_center_message_view.dart';
-import 'package:shortzz/screen/post_screen/widget/post_view_center.dart';
-import 'package:shortzz/utilities/app_res.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/font_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class ChatPostMessage extends StatelessWidget {
   final MessageData message;

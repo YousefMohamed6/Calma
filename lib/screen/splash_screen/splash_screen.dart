@@ -1,11 +1,11 @@
+import 'package:calmaa/common/widget/custom_shimmer_fill_text.dart';
+import 'package:calmaa/common/widget/theme_blur_bg.dart';
+import 'package:calmaa/screen/splash_screen/splash_screen_controller.dart';
+import 'package:calmaa/utilities/app_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/custom_shimmer_fill_text.dart';
-import 'package:shortzz/common/widget/theme_blur_bg.dart';
-import 'package:shortzz/screen/splash_screen/splash_screen_controller.dart';
-import 'package:shortzz/utilities/app_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

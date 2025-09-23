@@ -1,20 +1,21 @@
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/common/widget/loader_widget.dart';
+import 'package:calmaa/common/widget/no_data_widget.dart';
+import 'package:calmaa/model/post_story/music/music_model.dart';
+import 'package:calmaa/screen/music_sheet/music_sheet_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/common/widget/loader_widget.dart';
-import 'package:shortzz/common/widget/no_data_widget.dart';
-import 'package:shortzz/model/post_story/music/music_model.dart';
-import 'package:shortzz/screen/music_sheet/music_sheet_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class MusicList extends StatelessWidget {
   final RxList<Music> musicList;
   final bool isCategorySheet;
 
-  const MusicList({super.key, required this.musicList, this.isCategorySheet = false});
+  const MusicList(
+      {super.key, required this.musicList, this.isCategorySheet = false});
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +52,10 @@ class MusicCard extends StatelessWidget {
   final bool isCategorySheet;
 
   const MusicCard(
-      {super.key, required this.music, required this.controller, this.isCategorySheet = false});
+      {super.key,
+      required this.music,
+      required this.controller,
+      this.isCategorySheet = false});
 
   @override
   Widget build(BuildContext context) {
@@ -73,13 +77,14 @@ class MusicCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(music.title ?? '',
-                    style:
-                        TextStyleCustom.outFitMedium500(fontSize: 15, color: textDarkGrey(context)),
+                    style: TextStyleCustom.outFitMedium500(
+                        fontSize: 15, color: textDarkGrey(context)),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1),
                 Text(
                   '${music.artist} • ${music.duration}',
-                  style: TextStyleCustom.outFitLight300(color: textLightGrey(context)),
+                  style: TextStyleCustom.outFitLight300(
+                      color: textLightGrey(context)),
                   overflow: TextOverflow.ellipsis,
                   maxLines: 1,
                 )
@@ -91,8 +96,13 @@ class MusicCard extends StatelessWidget {
                 child: Obx(
                   () {
                     bool isSaved = controller.savedMusicIds.contains(music.id);
-                    return Image.asset(isSaved ? AssetRes.icFillBookmark1 : AssetRes.icBookmark,
-                        color: textDarkGrey(context), height: 22, width: 22);
+                    return Image.asset(
+                        isSaved
+                            ? AssetRes.icFillBookmark1
+                            : AssetRes.icBookmark,
+                        color: textDarkGrey(context),
+                        height: 22,
+                        width: 22);
                   },
                 )),
           ],

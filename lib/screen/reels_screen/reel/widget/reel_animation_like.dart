@@ -1,11 +1,11 @@
 import 'dart:math';
 
+import 'package:calmaa/common/functions/debounce_action.dart';
+import 'package:calmaa/common/manager/haptic_manager.dart';
+import 'package:calmaa/common/widget/gradient_icon.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/style_res.dart';
 import 'package:flutter/material.dart';
-import 'package:shortzz/common/functions/debounce_action.dart';
-import 'package:shortzz/common/manager/haptic_manager.dart';
-import 'package:shortzz/common/widget/gradient_icon.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/style_res.dart';
 
 class ReelAnimationLike extends StatefulWidget {
   const ReelAnimationLike(

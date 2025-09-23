@@ -1,17 +1,17 @@
+import 'package:calmaa/common/widget/black_gradient_shadow.dart';
+import 'package:calmaa/common/widget/custom_border_round_icon.dart';
+import 'package:calmaa/common/widget/loader_widget.dart';
+import 'package:calmaa/screen/camera_screen/camera_screen_controller.dart';
+import 'package:calmaa/screen/camera_screen/widget/camera_bottom_view.dart';
+import 'package:calmaa/screen/camera_screen/widget/camera_top_view.dart';
+import 'package:calmaa/screen/selected_music_sheet/selected_music_sheet_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:deepar_flutter_plus/deepar_flutter_plus.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:retrytech_plugin/retrytech_plugin.dart';
-import 'package:shortzz/common/widget/black_gradient_shadow.dart';
-import 'package:shortzz/common/widget/custom_border_round_icon.dart';
-import 'package:shortzz/common/widget/loader_widget.dart';
-import 'package:shortzz/screen/camera_screen/camera_screen_controller.dart';
-import 'package:shortzz/screen/camera_screen/widget/camera_bottom_view.dart';
-import 'package:shortzz/screen/camera_screen/widget/camera_top_view.dart';
-import 'package:shortzz/screen/selected_music_sheet/selected_music_sheet_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 enum CameraScreenType { post, story }
 

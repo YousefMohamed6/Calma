@@ -1,16 +1,16 @@
+import 'package:calmaa/model/livestream/livestream.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/audience/widget/livestream_audience_top_view.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/livestream_screen_controller.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/view/battle_view.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/view/live_stream_bottom_view.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/view/live_video_player.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/view/livestream_view.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/widget/battle_start_countdown_overlay.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/widget/live_stream_background_blur_image.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:keyboard_avoider/keyboard_avoider.dart';
-import 'package:shortzz/model/livestream/livestream.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/audience/widget/livestream_audience_top_view.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/livestream_screen_controller.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/view/battle_view.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/view/live_stream_bottom_view.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/view/live_video_player.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/view/livestream_view.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/widget/battle_start_countdown_overlay.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/widget/live_stream_background_blur_image.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class LiveStreamAudienceScreen extends StatelessWidget {
   final Livestream livestream;

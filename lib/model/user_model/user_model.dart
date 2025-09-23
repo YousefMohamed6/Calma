@@ -1,7 +1,7 @@
-import 'package:shortzz/common/extensions/common_extension.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/model/post_story/story/story_model.dart';
+import 'package:calmaa/common/extensions/common_extension.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/model/post_story/story/story_model.dart';
 
 class UserModel {
   UserModel({

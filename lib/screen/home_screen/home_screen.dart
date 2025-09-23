@@ -1,13 +1,13 @@
+import 'package:calmaa/common/widget/custom_divider.dart';
+import 'package:calmaa/screen/home_screen/home_screen_controller.dart';
+import 'package:calmaa/screen/reels_screen/reels_screen.dart';
+import 'package:calmaa/utilities/app_res.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/custom_divider.dart';
-import 'package:shortzz/screen/home_screen/home_screen_controller.dart';
-import 'package:shortzz/screen/reels_screen/reels_screen.dart';
-import 'package:shortzz/utilities/app_res.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

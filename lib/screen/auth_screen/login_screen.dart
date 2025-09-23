@@ -1,19 +1,19 @@
 import 'dart:io';
 
+import 'package:calmaa/common/widget/custom_divider.dart';
+import 'package:calmaa/common/widget/privacy_policy_text.dart';
+import 'package:calmaa/common/widget/text_button_custom.dart';
+import 'package:calmaa/common/widget/theme_blur_bg.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/auth_screen/auth_screen_controller.dart';
+import 'package:calmaa/screen/auth_screen/forget_password_sheet.dart';
+import 'package:calmaa/screen/auth_screen/registration_screen.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/custom_divider.dart';
-import 'package:shortzz/common/widget/privacy_policy_text.dart';
-import 'package:shortzz/common/widget/text_button_custom.dart';
-import 'package:shortzz/common/widget/theme_blur_bg.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/auth_screen/auth_screen_controller.dart';
-import 'package:shortzz/screen/auth_screen/forget_password_sheet.dart';
-import 'package:shortzz/screen/auth_screen/registration_screen.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

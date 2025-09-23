@@ -1,20 +1,20 @@
 import 'dart:ui';
 
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/manager/haptic_manager.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/common/widget/full_name_with_blue_tick.dart';
+import 'package:calmaa/common/widget/loader_widget.dart';
+import 'package:calmaa/model/livestream/app_user.dart';
+import 'package:calmaa/model/livestream/livestream.dart';
+import 'package:calmaa/model/livestream/livestream_user_state.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/audience/widget/live_stream_user_info_sheet.dart';
+import 'package:calmaa/screen/live_stream/livestream_screen/livestream_screen_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/manager/haptic_manager.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/common/widget/full_name_with_blue_tick.dart';
-import 'package:shortzz/common/widget/loader_widget.dart';
-import 'package:shortzz/model/livestream/app_user.dart';
-import 'package:shortzz/model/livestream/livestream.dart';
-import 'package:shortzz/model/livestream/livestream_user_state.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/audience/widget/live_stream_user_info_sheet.dart';
-import 'package:shortzz/screen/live_stream/livestream_screen/livestream_screen_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class LivestreamView extends StatelessWidget {
   final RxList<StreamView> streamViews;
@@ -229,7 +229,8 @@ class LiveStreamUserView extends StatelessWidget {
       LivestreamUserState? state = controller.liveUsersStates.firstWhereOrNull(
           (element) =>
               element.userId == int.parse(streamingView?.streamId ?? ''));
-      AppUser? liveUser = controller.firestoreController.users.firstWhereOrNull((element) =>
+      AppUser? liveUser = controller.firestoreController.users.firstWhereOrNull(
+          (element) =>
               element.userId == int.parse(streamingView?.streamId ?? ''));
 
       return Stack(
@@ -327,8 +328,7 @@ class LiveStreamUserView extends StatelessWidget {
   void _showUserActionSheet(AppUser user, Rx<LivestreamUserState?> state) {
     Get.bottomSheet(
       LiveStreamUserInfoSheet(
-          isAudience: true, liveUser: user,
-          controller: controller),
+          isAudience: true, liveUser: user, controller: controller),
       isScrollControlled: true,
     );
   }

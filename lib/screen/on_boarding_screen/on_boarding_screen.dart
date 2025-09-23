@@ -1,15 +1,15 @@
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/common/widget/text_button_custom.dart';
+import 'package:calmaa/common/widget/theme_blur_bg.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/screen/on_boarding_screen/on_boarding_screen_controller.dart';
+import 'package:calmaa/utilities/app_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/common/widget/text_button_custom.dart';
-import 'package:shortzz/common/widget/theme_blur_bg.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/screen/on_boarding_screen/on_boarding_screen_controller.dart';
-import 'package:shortzz/utilities/app_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -23,8 +23,8 @@ class OnBoardingScreen extends StatelessWidget {
         children: [
           const ThemeBlurBg(),
           // Image View
-          Obx(() =>
-              OnBoardingTopBGView(index: controller.selectedPage.value, controller: controller)),
+          Obx(() => OnBoardingTopBGView(
+              index: controller.selectedPage.value, controller: controller)),
           // Text and Description view with button
           Obx(
             () => Column(
@@ -55,12 +55,15 @@ class OnBoardingScreen extends StatelessWidget {
                       (index) {
                         return Expanded(
                           child: Obx(() {
-                            bool isSelected = controller.selectedPage.value == index;
+                            bool isSelected =
+                                controller.selectedPage.value == index;
                             return Container(
                                 height: 1,
                                 constraints: const BoxConstraints(maxWidth: 1),
-                                margin: const EdgeInsets.symmetric(horizontal: 2),
-                                color: whitePure(context).withValues(alpha: isSelected ? 1 : .4));
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 2),
+                                color: whitePure(context)
+                                    .withValues(alpha: isSelected ? 1 : .4));
                           }),
                         );
                       },
@@ -89,7 +92,8 @@ class OnBoardingTopBGView extends StatelessWidget {
   final int index;
   final OnBoardingScreenController controller;
 
-  const OnBoardingTopBGView({super.key, required this.index, required this.controller});
+  const OnBoardingTopBGView(
+      {super.key, required this.index, required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -101,7 +105,8 @@ class OnBoardingTopBGView extends StatelessWidget {
           child: CustomImage(
               key: ValueKey<int>(index),
               size: Size(Get.width, imageHeight),
-              image: (controller.onBoardingData[index].image ?? '').addBaseURL(),
+              image:
+                  (controller.onBoardingData[index].image ?? '').addBaseURL(),
               radius: 0,
               isShowPlaceHolder: true,
               fit: BoxFit.fitHeight,
@@ -114,7 +119,8 @@ class OnBoardingView extends StatelessWidget {
   final String title;
   final String description;
 
-  const OnBoardingView({super.key, required this.title, required this.description});
+  const OnBoardingView(
+      {super.key, required this.title, required this.description});
 
   @override
   Widget build(BuildContext context) {
@@ -125,7 +131,8 @@ class OnBoardingView extends StatelessWidget {
         children: [
           Text(
             title,
-            style: TextStyleCustom.unboundedBlack900(fontSize: 22, color: whitePure(context)),
+            style: TextStyleCustom.unboundedBlack900(
+                fontSize: 22, color: whitePure(context)),
             textAlign: TextAlign.center,
             overflow: TextOverflow.ellipsis,
             maxLines: AppRes.titleMaxLine,
@@ -133,7 +140,8 @@ class OnBoardingView extends StatelessWidget {
           const SizedBox(height: 20),
           Text(
             description,
-            style: TextStyleCustom.outFitRegular400(fontSize: 19, color: whitePure(context)),
+            style: TextStyleCustom.outFitRegular400(
+                fontSize: 19, color: whitePure(context)),
             textAlign: TextAlign.center,
             overflow: TextOverflow.ellipsis,
             maxLines: AppRes.descriptionMaxLine,

@@ -1,14 +1,14 @@
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/edit_profile_screen/edit_profile_screen_controller.dart';
+import 'package:calmaa/screen/edit_profile_screen/widget/add_edit_link_sheet.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/edit_profile_screen/edit_profile_screen_controller.dart';
-import 'package:shortzz/screen/edit_profile_screen/widget/add_edit_link_sheet.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class BuildLinkView extends StatelessWidget {
   final EditProfileScreenController controller;

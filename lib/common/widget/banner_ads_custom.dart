@@ -1,8 +1,8 @@
+import 'package:calmaa/common/manager/ads_manager.dart';
+import 'package:calmaa/common/service/subscription/subscription_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:shortzz/common/manager/ads_manager.dart';
-import 'package:shortzz/common/service/subscription/subscription_manager.dart';
 
 class BannerAdsCustom extends StatefulWidget {
   final double? size;

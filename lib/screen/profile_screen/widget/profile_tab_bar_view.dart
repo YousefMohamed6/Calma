@@ -1,8 +1,8 @@
+import 'package:calmaa/screen/profile_screen/profile_screen_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/screen/profile_screen/profile_screen_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class ProfileTabs extends StatelessWidget {
   final ProfileScreenController controller;
@@ -36,8 +36,9 @@ class ProfileTabs extends StatelessWidget {
             onTap: (value) {
               controller.userData.value?.checkIsBlocked(() {
                 controller.onTabChanged(value);
-              controller.pageController.animateToPage(value,
-                  duration: const Duration(milliseconds: 300), curve: Curves.linear);
+                controller.pageController.animateToPage(value,
+                    duration: const Duration(milliseconds: 300),
+                    curve: Curves.linear);
               });
             },
             indicatorColor: Colors.transparent,

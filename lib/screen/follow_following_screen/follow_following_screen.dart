@@ -1,23 +1,23 @@
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/navigation/navigate_with_controller.dart';
+import 'package:calmaa/common/widget/custom_back_button.dart';
+import 'package:calmaa/common/widget/custom_divider.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/common/widget/custom_tab_switcher.dart';
+import 'package:calmaa/common/widget/full_name_with_blue_tick.dart';
+import 'package:calmaa/common/widget/load_more_widget.dart';
+import 'package:calmaa/common/widget/loader_widget.dart';
+import 'package:calmaa/common/widget/no_data_widget.dart';
+import 'package:calmaa/common/widget/text_button_custom.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/follow_following_screen/follow_following_screen_controller.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/navigation/navigate_with_controller.dart';
-import 'package:shortzz/common/widget/custom_back_button.dart';
-import 'package:shortzz/common/widget/custom_divider.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/common/widget/custom_tab_switcher.dart';
-import 'package:shortzz/common/widget/full_name_with_blue_tick.dart';
-import 'package:shortzz/common/widget/load_more_widget.dart';
-import 'package:shortzz/common/widget/loader_widget.dart';
-import 'package:shortzz/common/widget/no_data_widget.dart';
-import 'package:shortzz/common/widget/text_button_custom.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/follow_following_screen/follow_following_screen_controller.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 enum FollowFollowingType { follower, following }
 
@@ -104,30 +104,30 @@ class FollowFollowingScreen extends StatelessWidget {
                 children: [
                   // Followers Page
                   _buildUserList(
-                    showLoader: showFollowersLoader,
-                    showNoData: showFollowersNoData,
-                    noDataTitle: null,
-                    noDataDescription: null,
-                    users: controller.followers,
-                    userExtractor: (item) => item.fromUser,
-                    onItemTap: controller.onFollowUnFollow,
-                    loadMore: controller.fetchFollowers,
+                      showLoader: showFollowersLoader,
+                      showNoData: showFollowersNoData,
+                      noDataTitle: null,
+                      noDataDescription: null,
+                      users: controller.followers,
+                      userExtractor: (item) => item.fromUser,
+                      onItemTap: controller.onFollowUnFollow,
+                      loadMore: controller.fetchFollowers,
                       controller: controller.followerController),
 
                   // Followings Page
                   _buildUserList(
-                    showLoader: showFollowingsLoader,
-                    showNoData: showFollowingsNoData,
-                    noDataTitle: user?.showMyFollowing == 1
-                        ? LKey.nothingToShowHere.tr
-                        : null,
-                    noDataDescription: user?.showMyFollowing == 1
-                        ? LKey.userHidFollowings.tr
-                        : null,
-                    users: controller.followings,
-                    userExtractor: (item) => item.toUser,
-                    onItemTap: controller.onFollowUnFollow,
-                    loadMore: controller.fetchFollowings,
+                      showLoader: showFollowingsLoader,
+                      showNoData: showFollowingsNoData,
+                      noDataTitle: user?.showMyFollowing == 1
+                          ? LKey.nothingToShowHere.tr
+                          : null,
+                      noDataDescription: user?.showMyFollowing == 1
+                          ? LKey.userHidFollowings.tr
+                          : null,
+                      users: controller.followings,
+                      userExtractor: (item) => item.toUser,
+                      onItemTap: controller.onFollowUnFollow,
+                      loadMore: controller.fetchFollowings,
                       controller: controller.followingController),
                 ],
               );

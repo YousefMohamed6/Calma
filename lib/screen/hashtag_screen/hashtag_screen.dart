@@ -1,16 +1,16 @@
+import 'package:calmaa/common/extensions/common_extension.dart';
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/widget/custom_app_bar.dart';
+import 'package:calmaa/common/widget/custom_tab_switcher.dart';
+import 'package:calmaa/common/widget/loader_widget.dart';
+import 'package:calmaa/common/widget/post_list.dart';
+import 'package:calmaa/common/widget/reel_list.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/hashtag_screen/hashtag_screen_controller.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/common_extension.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/widget/custom_app_bar.dart';
-import 'package:shortzz/common/widget/custom_tab_switcher.dart';
-import 'package:shortzz/common/widget/loader_widget.dart';
-import 'package:shortzz/common/widget/post_list.dart';
-import 'package:shortzz/common/widget/reel_list.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/hashtag_screen/hashtag_screen_controller.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class HashtagScreen extends StatelessWidget {
   final String hashtag;

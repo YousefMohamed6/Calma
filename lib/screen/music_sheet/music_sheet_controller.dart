@@ -1,22 +1,26 @@
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/functions/debounce_action.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/post_service.dart';
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/model/post_story/music/music_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/selected_music_sheet/selected_music_sheet.dart';
+import 'package:calmaa/screen/selected_music_sheet/selected_music_sheet_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/functions/debounce_action.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/post_service.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/model/post_story/music/music_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/selected_music_sheet/selected_music_sheet.dart';
-import 'package:shortzz/screen/selected_music_sheet/selected_music_sheet_controller.dart';
 
 class MusicSheetController extends BaseController {
-  List<String> categories = [LKey.explore.tr, LKey.categories.tr, LKey.saved.tr];
+  List<String> categories = [
+    LKey.explore.tr,
+    LKey.categories.tr,
+    LKey.saved.tr
+  ];
   RxInt selectedMusicCategory = 0.obs;
   int videoSecond;
   RxBool isMusicDownloading = false.obs;
@@ -87,7 +91,8 @@ class MusicSheetController extends BaseController {
 
   void fetchMusicExplore({bool isEmpty = false}) async {
     isLoading.value = true;
-    int? lastItemId = isEmpty || exploreMusicList.isEmpty ? null : exploreMusicList.last.id;
+    int? lastItemId =
+        isEmpty || exploreMusicList.isEmpty ? null : exploreMusicList.last.id;
     List<Music> items =
         await PostService.instance.fetchMusicExplore(lastItemId: lastItemId);
     if (isEmpty) {
@@ -103,7 +108,8 @@ class MusicSheetController extends BaseController {
       return Loggers.error('Invalid Id : $id');
     }
     isLoading.value = true;
-    int? lastItemId = isEmpty || categoryMusicList.isEmpty ? null : categoryMusicList.last.id;
+    int? lastItemId =
+        isEmpty || categoryMusicList.isEmpty ? null : categoryMusicList.last.id;
     List<Music> items = await PostService.instance
         .fetchMusicByCategories(lastItemId: lastItemId, categoryId: id);
     if (isEmpty) {
@@ -126,7 +132,8 @@ class MusicSheetController extends BaseController {
   void searchMusic(String keyword, {bool isEmpty = false}) async {
     List<Music> items = await PostService.instance.searchMusic(
       keyword: keyword,
-      lastItemId: searchMusicList.isEmpty || isEmpty ? null : searchMusicList.last.id,
+      lastItemId:
+          searchMusicList.isEmpty || isEmpty ? null : searchMusicList.last.id,
     );
 
     if (isEmpty) {
@@ -157,8 +164,8 @@ class MusicSheetController extends BaseController {
     this.savedMusicIds.value =
         (SessionManager.instance.getUser()?.savedMusicIds ?? '')
             .split(',')
-        .map((e) => int.parse(e))
-        .toList();
+            .map((e) => int.parse(e))
+            .toList();
   }
 
   void onCancelTap() {

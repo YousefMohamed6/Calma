@@ -1,16 +1,16 @@
 import 'dart:io';
 
+import 'package:calmaa/common/manager/haptic_manager.dart';
+import 'package:calmaa/common/widget/confirmation_dialog.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/camera_edit_screen/camera_edit_screen_controller.dart';
+import 'package:calmaa/screen/camera_edit_screen/text_story/story_text_view_controller.dart';
+import 'package:calmaa/screen/camera_edit_screen/text_story/widget/text_editor_sheet.dart';
+import 'package:calmaa/screen/camera_screen/camera_screen_controller.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/manager/haptic_manager.dart';
-import 'package:shortzz/common/widget/confirmation_dialog.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/camera_edit_screen/camera_edit_screen_controller.dart';
-import 'package:shortzz/screen/camera_edit_screen/text_story/story_text_view_controller.dart';
-import 'package:shortzz/screen/camera_edit_screen/text_story/widget/text_editor_sheet.dart';
-import 'package:shortzz/screen/camera_screen/camera_screen_controller.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
 
 class CameraEditImageView extends StatelessWidget {
   final CameraEditScreenController cameraEditController;

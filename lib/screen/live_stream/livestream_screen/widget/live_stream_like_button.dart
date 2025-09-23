@@ -1,9 +1,9 @@
 import 'dart:math';
 
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/color_res.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/color_res.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class LiveStreamLikeButton extends StatefulWidget {
   final Function(Function())? onLikeTap;

@@ -1,12 +1,12 @@
+import 'package:calmaa/common/widget/custom_app_bar.dart';
+import 'package:calmaa/common/widget/custom_toggle.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/settings_screen/settings_screen_controller.dart';
+import 'package:calmaa/screen/settings_screen/widget/setting_icon_text_with_arrow.dart';
+import 'package:calmaa/utilities/asset_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/custom_app_bar.dart';
-import 'package:shortzz/common/widget/custom_toggle.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/settings_screen/settings_screen_controller.dart';
-import 'package:shortzz/screen/settings_screen/widget/setting_icon_text_with_arrow.dart';
-import 'package:shortzz/utilities/asset_res.dart';
 
 class NotificationsPage extends StatelessWidget {
   const NotificationsPage({super.key});
@@ -67,7 +67,8 @@ class NotificationsPage extends StatelessWidget {
                     onChanged: controller.isUpdateApiCalled.value
                         ? null
                         : (value) async {
-                            controller.onChangedToggle(value, setting['id'] as SettingToggle);
+                            controller.onChangedToggle(
+                                value, setting['id'] as SettingToggle);
                           },
                   ),
                 ))

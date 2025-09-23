@@ -1,10 +1,10 @@
 import 'dart:convert';
 
+import 'package:calmaa/common/service/api/post_service.dart';
+import 'package:calmaa/common/service/url_extractor/parsers/base_parser.dart';
+import 'package:calmaa/model/post_story/music/music_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/service/api/post_service.dart';
-import 'package:shortzz/common/service/url_extractor/parsers/base_parser.dart';
-import 'package:shortzz/model/post_story/music/music_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
 
 class PostModel {
   PostModel({

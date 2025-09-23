@@ -1,14 +1,14 @@
+import 'package:calmaa/common/widget/loader_widget.dart';
+import 'package:calmaa/common/widget/my_refresh_indicator.dart';
+import 'package:calmaa/common/widget/no_data_widget.dart';
+import 'package:calmaa/common/widget/post_list.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/feed_screen/feed_screen_controller.dart';
+import 'package:calmaa/screen/feed_screen/widget/feed_top_view.dart';
+import 'package:calmaa/screen/feed_screen/widget/story_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/loader_widget.dart';
-import 'package:shortzz/common/widget/my_refresh_indicator.dart';
-import 'package:shortzz/common/widget/no_data_widget.dart';
-import 'package:shortzz/common/widget/post_list.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/feed_screen/feed_screen_controller.dart';
-import 'package:shortzz/screen/feed_screen/widget/feed_top_view.dart';
-import 'package:shortzz/screen/feed_screen/widget/story_view.dart';
 
 class FeedScreen extends StatelessWidget {
   final User? myUser;

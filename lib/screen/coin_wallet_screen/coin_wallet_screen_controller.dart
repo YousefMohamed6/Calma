@@ -1,13 +1,12 @@
-
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/gift_wallet_service.dart';
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/common/service/subscription/subscription_manager.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
 import 'package:get/get.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/gift_wallet_service.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/common/service/subscription/subscription_manager.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
 
 class CoinWalletScreenController extends BaseController {
   Rx<User?> myUser = Rx<User?>(null);
@@ -73,7 +72,6 @@ class CoinWalletScreenController extends BaseController {
       }
     });
   }
-
 }
 
 class CoinPlan {

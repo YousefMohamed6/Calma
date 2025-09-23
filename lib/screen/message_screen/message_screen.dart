@@ -1,15 +1,15 @@
+import 'package:calmaa/common/widget/custom_search_text_field.dart';
+import 'package:calmaa/common/widget/custom_tab_switcher.dart';
+import 'package:calmaa/common/widget/no_data_widget.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/chat/chat_thread.dart';
+import 'package:calmaa/screen/message_screen/message_screen_controller.dart';
+import 'package:calmaa/screen/message_screen/widget/chat_conversation_user_card.dart';
+import 'package:calmaa/utilities/color_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/custom_search_text_field.dart';
-import 'package:shortzz/common/widget/custom_tab_switcher.dart';
-import 'package:shortzz/common/widget/no_data_widget.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/chat/chat_thread.dart';
-import 'package:shortzz/screen/message_screen/message_screen_controller.dart';
-import 'package:shortzz/screen/message_screen/widget/chat_conversation_user_card.dart';
-import 'package:shortzz/utilities/color_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class MessageScreen extends StatelessWidget {
   const MessageScreen({super.key});

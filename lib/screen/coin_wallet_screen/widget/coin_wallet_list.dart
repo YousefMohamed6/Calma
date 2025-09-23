@@ -1,12 +1,12 @@
+import 'package:calmaa/common/widget/text_button_custom.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/coin_wallet_screen/coin_wallet_screen_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/text_button_custom.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/coin_wallet_screen/coin_wallet_screen_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class CoinWalletList extends StatelessWidget {
   final CoinWalletScreenController controller;
@@ -31,7 +31,8 @@ class CoinWalletList extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                 decoration: ShapeDecoration(
                     shape: SmoothRectangleBorder(
-                        borderRadius: SmoothBorderRadius(cornerRadius: 10, cornerSmoothing: 1),
+                        borderRadius: SmoothBorderRadius(
+                            cornerRadius: 10, cornerSmoothing: 1),
                         side: BorderSide(
                           color: textLightGrey(context).withValues(alpha: .2),
                         )),
@@ -49,7 +50,8 @@ class CoinWalletList extends StatelessWidget {
                             style: TextStyleCustom.unboundedMedium500(
                                 color: textDarkGrey(context), fontSize: 15)),
                         Text('${data.priceString} ${LKey.only.tr}',
-                            style: TextStyleCustom.outFitRegular400(color: textLightGrey(context))),
+                            style: TextStyleCustom.outFitRegular400(
+                                color: textLightGrey(context))),
                       ],
                     )),
                     TextButtonCustom(

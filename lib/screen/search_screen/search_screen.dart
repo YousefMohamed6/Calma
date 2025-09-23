@@ -1,18 +1,18 @@
+import 'package:calmaa/common/widget/custom_back_button.dart';
+import 'package:calmaa/common/widget/custom_search_text_field.dart';
+import 'package:calmaa/common/widget/post_list.dart';
+import 'package:calmaa/common/widget/reel_list.dart';
+import 'package:calmaa/common/widget/search_result_tile.dart';
+import 'package:calmaa/common/widget/user_list.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/create_feed_screen/widget/location_sheet.dart';
+import 'package:calmaa/screen/search_screen/search_screen_controller.dart';
+import 'package:calmaa/utilities/app_res.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/widget/custom_back_button.dart';
-import 'package:shortzz/common/widget/custom_search_text_field.dart';
-import 'package:shortzz/common/widget/post_list.dart';
-import 'package:shortzz/common/widget/reel_list.dart';
-import 'package:shortzz/common/widget/search_result_tile.dart';
-import 'package:shortzz/common/widget/user_list.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/create_feed_screen/widget/location_sheet.dart';
-import 'package:shortzz/screen/search_screen/search_screen_controller.dart';
-import 'package:shortzz/utilities/app_res.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});

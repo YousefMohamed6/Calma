@@ -1,24 +1,24 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/common_service.dart';
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/common/service/network_helper/network_helper.dart';
+import 'package:calmaa/common/widget/no_internet_sheet.dart';
+import 'package:calmaa/common/widget/restart_widget.dart';
+import 'package:calmaa/languages/dynamic_translations.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/screen/auth_screen/login_screen.dart';
+import 'package:calmaa/screen/dashboard_screen/dashboard_screen.dart';
+import 'package:calmaa/screen/select_language_screen/select_language_screen.dart';
+import 'package:calmaa/utilities/app_res.dart';
 import 'package:csv/csv.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/common_service.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/common/service/network_helper/network_helper.dart';
-import 'package:shortzz/common/widget/no_internet_sheet.dart';
-import 'package:shortzz/common/widget/restart_widget.dart';
-import 'package:shortzz/languages/dynamic_translations.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/screen/auth_screen/login_screen.dart';
-import 'package:shortzz/screen/dashboard_screen/dashboard_screen.dart';
-import 'package:shortzz/screen/select_language_screen/select_language_screen.dart';
-import 'package:shortzz/utilities/app_res.dart';
 
 class SplashScreenController extends BaseController {
   late StreamSubscription _subscription;

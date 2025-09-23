@@ -1,5 +1,5 @@
+import 'package:calmaa/common/service/url_extractor/utils/util.dart';
 import 'package:html/dom.dart';
-import 'package:shortzz/common/service/url_extractor/utils/util.dart';
 
 import 'base_parser.dart';
 

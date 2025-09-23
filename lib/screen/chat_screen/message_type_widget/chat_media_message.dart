@@ -1,20 +1,20 @@
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/widget/custom_image.dart';
+import 'package:calmaa/model/chat/message_data.dart';
+import 'package:calmaa/model/post_story/post_model.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/screen/chat_screen/chat_screen_controller.dart';
+import 'package:calmaa/screen/chat_screen/widget/chat_center_message_view.dart';
+import 'package:calmaa/screen/image_view_screen/image_view_screen.dart';
+import 'package:calmaa/screen/video_player_screen/video_player_screen.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/style_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:dismissible_page/dismissible_page.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/widget/custom_image.dart';
-import 'package:shortzz/model/chat/message_data.dart';
-import 'package:shortzz/model/post_story/post_model.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/screen/chat_screen/chat_screen_controller.dart';
-import 'package:shortzz/screen/chat_screen/widget/chat_center_message_view.dart';
-import 'package:shortzz/screen/image_view_screen/image_view_screen.dart';
-import 'package:shortzz/screen/video_player_screen/video_player_screen.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/style_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class ChatMediaMessage extends StatelessWidget {
   final bool isMe;

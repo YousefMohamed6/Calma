@@ -1,13 +1,13 @@
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/screen/edit_profile_screen/widget/phone_codes_screen.dart';
+import 'package:calmaa/screen/edit_profile_screen/widget/phone_codes_screen_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
+import 'package:calmaa/utilities/color_res.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/screen/edit_profile_screen/widget/phone_codes_screen.dart';
-import 'package:shortzz/screen/edit_profile_screen/widget/phone_codes_screen_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
-import 'package:shortzz/utilities/color_res.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class TextFieldCustom extends StatefulWidget {
   final bool isPrefixIconShow;
@@ -80,8 +80,8 @@ class _TextFieldCustomState extends State<TextFieldCustom> {
                   : bgLightGrey(context),
               border: Border.symmetric(
                 horizontal: BorderSide(
-                    color: widget.isError
-                        ? ColorRes.likeRed : Colors.transparent,
+                    color:
+                        widget.isError ? ColorRes.likeRed : Colors.transparent,
                     width: .5),
               )),
           child: TextField(

@@ -1,11 +1,11 @@
 import 'dart:io';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/manager/ads_manager.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/subscription/subscription_manager.dart';
 import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/manager/ads_manager.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/subscription/subscription_manager.dart';
 
 class AdsController extends BaseController {
   InterstitialAd? interstitialAd;

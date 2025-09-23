@@ -1,13 +1,13 @@
+import 'package:calmaa/common/extensions/duration_extension.dart';
+import 'package:calmaa/common/extensions/string_extension.dart';
+import 'package:calmaa/common/service/video_cache_helper/video_cache_helper.dart';
+import 'package:calmaa/screen/dashboard_screen/dashboard_screen_controller.dart';
+import 'package:calmaa/screen/reels_screen/reel/reel_page_controller.dart';
+import 'package:calmaa/utilities/text_style_custom.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/extensions/duration_extension.dart';
-import 'package:shortzz/common/extensions/string_extension.dart';
-import 'package:shortzz/common/service/video_cache_helper/video_cache_helper.dart';
-import 'package:shortzz/screen/dashboard_screen/dashboard_screen_controller.dart';
-import 'package:shortzz/screen/reels_screen/reel/reel_page_controller.dart';
-import 'package:shortzz/utilities/text_style_custom.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 import 'package:video_player/video_player.dart';
 
 class ReelSeekBar extends StatefulWidget {

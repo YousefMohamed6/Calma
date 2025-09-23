@@ -1,9 +1,9 @@
+import 'package:calmaa/common/manager/haptic_manager.dart';
+import 'package:calmaa/utilities/style_res.dart';
+import 'package:calmaa/utilities/theme_res.dart';
 import 'package:figma_squircle_updated/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/manager/haptic_manager.dart';
-import 'package:shortzz/utilities/style_res.dart';
-import 'package:shortzz/utilities/theme_res.dart';
 
 class CustomToggle extends StatefulWidget {
   final RxBool isOn;

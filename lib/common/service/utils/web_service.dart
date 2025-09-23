@@ -1,4 +1,4 @@
-import 'package:shortzz/utilities/const_res.dart';
+import 'package:calmaa/utilities/const_res.dart';
 
 class WebService {
   static var user = _User();
@@ -26,8 +26,10 @@ class _Moderation {
 
 class _Notification {
   String fetchAdminNotifications = "${apiURL}misc/fetchAdminNotifications";
-  String fetchActivityNotifications = "${apiURL}misc/fetchActivityNotifications";
-  String pushNotificationToSingleUser = "${apiURL}misc/pushNotificationToSingleUser";
+  String fetchActivityNotifications =
+      "${apiURL}misc/fetchActivityNotifications";
+  String pushNotificationToSingleUser =
+      "${apiURL}misc/pushNotificationToSingleUser";
 }
 
 class _GiftWallet {

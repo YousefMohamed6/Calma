@@ -1,18 +1,18 @@
 import 'dart:convert';
 
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/api_service.dart';
+import 'package:calmaa/common/service/utils/params.dart';
+import 'package:calmaa/common/service/utils/web_service.dart';
+import 'package:calmaa/model/general/file_path_model.dart';
+import 'package:calmaa/model/general/location_place_model.dart';
+import 'package:calmaa/model/general/place_detail.dart';
+import 'package:calmaa/model/general/settings_model.dart';
+import 'package:calmaa/model/general/status_model.dart';
+import 'package:calmaa/utilities/app_res.dart';
 import 'package:http/http.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/api_service.dart';
-import 'package:shortzz/common/service/utils/params.dart';
-import 'package:shortzz/common/service/utils/web_service.dart';
-import 'package:shortzz/model/general/file_path_model.dart';
-import 'package:shortzz/model/general/location_place_model.dart';
-import 'package:shortzz/model/general/place_detail.dart';
-import 'package:shortzz/model/general/settings_model.dart';
-import 'package:shortzz/model/general/status_model.dart';
-import 'package:shortzz/utilities/app_res.dart';
 
 class CommonService {
   CommonService._();

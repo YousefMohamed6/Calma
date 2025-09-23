@@ -1,13 +1,13 @@
 import 'dart:developer';
 import 'dart:io';
 
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/common/service/api/user_service.dart';
+import 'package:calmaa/model/user_model/user_model.dart';
+import 'package:calmaa/utilities/const_res.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/common/service/api/user_service.dart';
-import 'package:shortzz/model/user_model/user_model.dart';
-import 'package:shortzz/utilities/const_res.dart';
 
 bool isPurchaseConfig = false;
 RxBool isSubscribe = false.obs;

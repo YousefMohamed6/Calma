@@ -1,10 +1,10 @@
 import 'dart:ui';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/model/general/countries_model.dart';
+import 'package:calmaa/screen/edit_profile_screen/edit_profile_screen_controller.dart';
+import 'package:calmaa/utilities/asset_res.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/model/general/countries_model.dart';
-import 'package:shortzz/screen/edit_profile_screen/edit_profile_screen_controller.dart';
-import 'package:shortzz/utilities/asset_res.dart';
 
 class PhoneCodesScreenController extends BaseController {
   List<Country> allCountries = [];

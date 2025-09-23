@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:math';
 
+import 'package:calmaa/common/manager/logger.dart';
 import 'package:flutter/material.dart';
-import 'package:shortzz/common/manager/logger.dart';
 
 class GlitchImage extends StatefulWidget {
   final String imageUrl;

@@ -1,8 +1,8 @@
+import 'package:calmaa/common/controller/ads_controller.dart';
+import 'package:calmaa/model/livestream/livestream_user_state.dart';
+import 'package:calmaa/screen/live_stream/live_stream_end_screen/widget/livestream_summary.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shortzz/common/controller/ads_controller.dart';
-import 'package:shortzz/model/livestream/livestream_user_state.dart';
-import 'package:shortzz/screen/live_stream/live_stream_end_screen/widget/livestream_summary.dart';
 
 class LiveStreamEndScreen extends StatelessWidget {
   final LivestreamUserState? userState;

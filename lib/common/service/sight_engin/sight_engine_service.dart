@@ -2,17 +2,17 @@ import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 
+import 'package:calmaa/common/controller/base_controller.dart';
+import 'package:calmaa/common/manager/logger.dart';
+import 'package:calmaa/common/manager/session_manager.dart';
+import 'package:calmaa/languages/languages_keys.dart';
+import 'package:calmaa/model/sight_engine/sight_engine_media_model.dart';
+import 'package:calmaa/model/sight_engine/text_moderation_model.dart';
+import 'package:calmaa/utilities/app_res.dart';
 import 'package:flutter_native_video_trimmer/flutter_native_video_trimmer.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
-import 'package:shortzz/common/controller/base_controller.dart';
-import 'package:shortzz/common/manager/logger.dart';
-import 'package:shortzz/common/manager/session_manager.dart';
-import 'package:shortzz/languages/languages_keys.dart';
-import 'package:shortzz/model/sight_engine/sight_engine_media_model.dart';
-import 'package:shortzz/model/sight_engine/text_moderation_model.dart';
-import 'package:shortzz/utilities/app_res.dart';
 
 class SightEngineService {
   static var shared = SightEngineService();
@@ -76,9 +76,10 @@ class SightEngineService {
     }
   }
 
-  Future<void> checkVideoInSightEngine({required XFile xFile,
-    required int duration,
-    required Function() completion}) async {
+  Future<void> checkVideoInSightEngine(
+      {required XFile xFile,
+      required int duration,
+      required Function() completion}) async {
     if (SessionManager.instance.getSettings()?.isContentModeration == 0) {
       completion();
       return;
