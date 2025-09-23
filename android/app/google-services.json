@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "774602819167",
+    "project_id": "calma-b0a5b",
+    "storage_bucket": "calma-b0a5b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774602819167:android:d0d36eb2a54f9abc6efdea",
+        "android_client_info": {
+          "package_name": "com.retrytech.shortzz.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774602819167-29dj551nkr9gqt7jgpvgvrt2pimhl1ld.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.retrytech.shortzz.apps",
+            "certificate_hash": "b3d90b266a0e8ed9cc9b41fbdb63b933796013be"
+          }
+        },
+        {
+          "client_id": "774602819167-6oinr2bb389aev3llq7fh54ncn8ai86k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzHeeWQy_QlP3sKZZ_hEV39IDt68jUodA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774602819167-6oinr2bb389aev3llq7fh54ncn8ai86k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "774602819167-m9ro4gcitqg94vo6omjgt6i35m81881o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.retrytech.bubbly"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
